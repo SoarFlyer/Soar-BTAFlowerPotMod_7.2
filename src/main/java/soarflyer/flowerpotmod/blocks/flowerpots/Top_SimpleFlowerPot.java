@@ -2,14 +2,20 @@ package soarflyer.flowerpotmod.blocks.flowerpots;
 
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
+import net.minecraft.core.entity.EntityLiving;
+import net.minecraft.core.util.helper.Side;
+import net.minecraft.core.util.phys.AABB;
 import net.minecraft.core.world.World;
+import net.minecraft.core.world.WorldSource;
+
+import java.util.ArrayList;
 
 import static soarflyer.flowerpotmod.FlowerPotMod.BlockID;
 import static soarflyer.flowerpotmod.FlowerPotMod.ID_Simple;
 
 public class Top_SimpleFlowerPot extends Block {
 	public Top_SimpleFlowerPot(String key, int id) {
-		super(key, id, Material.grass);
+		super(key, id, Material.plant);
 	}
 
 	/// Change this when making new blocks
@@ -17,14 +23,15 @@ public class Top_SimpleFlowerPot extends Block {
 	int ChangeTopID = BlockID + ID_Simple + 1;
 
 
+	// Be aware that there's no selection box
+	// you can place them, but the only way to remove them is by removing the block under them
 	@Override
 	public void onNeighborBlockChange(World world, int x, int y, int z, int blockId) {
-		int myId = world.getBlockId(x, y, z);
-		int myMetadata = world.getBlockMetadata(x, y, z);
-		int upId = world.getBlockId(x, y + 1, z);
-		int downId = world.getBlockId(x, y - 1, z);
-		if (myId == ChangeTopID && downId == 0) {
-			world.setBlockAndMetadata(x, y, z, 0, myMetadata);
+		int MyID = world.getBlockId(x, y, z);
+		int UpID = world.getBlockId(x, y + 1, z);
+		int DownID = world.getBlockId(x, y - 1, z);
+		if (MyID == ChangeTopID && DownID == 0) {
+			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
 		}
 	}
 

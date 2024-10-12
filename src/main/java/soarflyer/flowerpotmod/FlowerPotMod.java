@@ -29,7 +29,7 @@ import turniplabs.halplibe.util.RecipeEntrypoint;
 // copy a recipe builder, and set it to output the id by its array number
 // define the shape of the recipe should be fairly straightforward
 //
-//
+// And don't forget to name it in en_US.lang!
 /// ------------------------------------------------------
 
 public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, RecipeEntrypoint {

@@ -26,15 +26,13 @@ public class Bottom_SimpleFlowerPot extends Block {
 	int ChangeTopID = BlockID + ID_Simple + 1;
 
 
-
 	@Override
 	public void onBlockPlaced(World world, int x, int y, int z, Side side, EntityLiving entity, double sideHeight) {
-		int myId = world.getBlockId(x, y, z);
-		int myMetadata = world.getBlockMetadata(x, y, z);
-		int upId = world.getBlockId(x, y + 1, z);
-		int downId = world.getBlockId(x, y - 1, z);
-		if (myId == ChangeID && upId == 0) {
-			world.setBlockAndMetadata(x, y + 1, z, ChangeTopID, myMetadata);
+		int MyID = world.getBlockId(x, y, z);
+		int UpID = world.getBlockId(x, y + 1, z);
+		int DownID = world.getBlockId(x, y - 1, z);
+		if (MyID == ChangeID && UpID == 0) {
+			world.setBlockAndMetadata(x, y + 1, z, ChangeTopID, world.getBlockMetadata(x, y, z));
 		}
 	}
 
@@ -42,12 +40,11 @@ public class Bottom_SimpleFlowerPot extends Block {
 	// Tops remove themselves anyway
 	@Override
 	public void onBlockRemoved(World world, int x, int y, int z, int data) {
-		int myId = world.getBlockId(x, y, z);
-		int myMetadata = world.getBlockMetadata(x, y, z);
-		int upId = world.getBlockId(x, y + 1, z);
-		int downId = world.getBlockId(x, y - 1, z);
-		if (myId == ChangeID && upId == ChangeTopID) {
-			world.setBlockAndMetadata(x, y + 1, z, 0, myMetadata);
+		int MyID = world.getBlockId(x, y, z);
+		int UpID = world.getBlockId(x, y + 1, z);
+		int DownID = world.getBlockId(x, y - 1, z);
+		if (MyID == ChangeID && UpID == ChangeTopID) {
+			world.setBlockAndMetadata(x, y + 1, z, 0, world.getBlockMetadata(x, y, z));
 		}
 	}
 

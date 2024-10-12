@@ -30,7 +30,7 @@ public class Model_BottomFlowerPot<T extends Block> extends BlockModelStandard<T
 	@Override
 	public void renderBlockOnInventory(Tessellator tessellator, int metadata, float brightness, float alpha, @Nullable Integer lightmapCoordinate) {
 		// Draw the lower cube of the model
-		block.setBlockBounds(0.1875, 0, 0.1875, 0.8125, 0.5, 0.8125);
-		super.renderBlockOnInventory(tessellator, metadata, brightness, alpha, lightmapCoordinate);
+		block.setBlockBounds(0.1875, 0.0, 0.1875, 0.8125, 0.5, 0.8125);
+		super.renderBlockOnInventory(tessellator, metadata, 10.0f, alpha, lightmapCoordinate);
 	}
 }

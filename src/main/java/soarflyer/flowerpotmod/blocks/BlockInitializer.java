@@ -106,9 +106,10 @@ public class BlockInitializer {
 		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
 		BlockBuilder custom_block_builder3 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
-			.setBlockSound(BlockSounds.STONE)
+			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
 			.setResistance(1.0F)
+			.setUseInternalLight()
 			.setTextures("flowerpotmod:block/Arrangement_SimpleFlowerPot")
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
@@ -117,9 +118,10 @@ public class BlockInitializer {
 
 		BlockBuilder custom_block_builder7 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
-			.setBlockSound(BlockSounds.STONE)
+			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
 			.setResistance(1.0F)
+			.setUseInternalLight()
 			.setTextures("flowerpotmod:block/Arrangement_VariedFlowerPot")
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
@@ -128,9 +130,10 @@ public class BlockInitializer {
 
 		BlockBuilder custom_block_builder8 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
-			.setBlockSound(BlockSounds.STONE)
+			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
 			.setResistance(1.0F)
+			.setUseInternalLight()
 			.setTextures("flowerpotmod:block/Arrangement_WarmFlowerPot")
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
@@ -139,9 +142,10 @@ public class BlockInitializer {
 
 		BlockBuilder custom_block_builder9 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
-			.setBlockSound(BlockSounds.STONE)
+			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
 			.setResistance(1.0F)
+			.setUseInternalLight()
 			.setTextures("flowerpotmod:block/Arrangement_CoolFlowerPot")
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
@@ -150,9 +154,10 @@ public class BlockInitializer {
 
 		BlockBuilder custom_block_builder10 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
-			.setBlockSound(BlockSounds.STONE)
+			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
 			.setResistance(1.0F)
+			.setUseInternalLight()
 			.setTextures("flowerpotmod:block/Arrangement_WeedFlowerPot")
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 

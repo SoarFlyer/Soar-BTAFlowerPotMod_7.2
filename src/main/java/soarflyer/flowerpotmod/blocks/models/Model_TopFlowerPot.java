@@ -40,14 +40,14 @@ public class Model_TopFlowerPot<T extends Block> extends BlockModelStandard<T> {
 	@Override
 	public void renderBlockOnInventory(Tessellator tessellator, int metadata, float brightness, float alpha, @Nullable Integer lightmapCoordinate) {
 		// Draw the lower cube of the model
-		block.setBlockBounds(0, 0.4, 0.425, 1, 1.4, 0.425);
+		block.setBlockBounds(0, 0.0, 0.425, 1, 1.0, 0.425);
 		//mirror
-		block.setBlockBounds(1, 0.4, 0.575, 0, 1.4, 0.575);
+		block.setBlockBounds(1, 0.0, 0.575, 0, 1.0, 0.575);
 
 		// Draw the upper cube of the model
-		block.setBlockBounds(0.425, 0.4, 0, 0.425, 1.4, 1);
+		block.setBlockBounds(0.425, 0.0, 0, 0.425, 1.0, 1);
 		//mirror
-		block.setBlockBounds(0.575, 0.4, 1, 0.575, 1.4, 0);
-		super.renderBlockOnInventory(tessellator, metadata, brightness, alpha, lightmapCoordinate);
+		block.setBlockBounds(0.575, 0.0, 1, 0.575, 1.0, 0);
+		super.renderBlockOnInventory(tessellator, metadata, 15.0f, alpha, lightmapCoordinate);
 	}
 }
