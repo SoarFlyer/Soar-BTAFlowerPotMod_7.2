@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "flowerpotmod",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Flower Pot Mod",
+  "description": "Adds themed flower pots. Built using Turnip Labs template.",
   "authors": [
-    "Turnip Labs"
+    "SoarFlyer"
   ],
   "contact": {
     "homepage": "",
@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"soarflyer.flowerpotmod.FlowerPotMod"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"soarflyer.flowerpotmod.FlowerPotMod"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"soarflyer.flowerpotmod.FlowerPotMod"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"soarflyer.flowerpotmod.FlowerPotMod"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "flowerpotmod.mixins.json"
   ],
 
   "depends": {
