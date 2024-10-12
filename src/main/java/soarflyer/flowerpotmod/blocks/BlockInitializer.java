@@ -110,55 +110,74 @@ public class BlockInitializer {
 			.setHardness(1.0F)
 			.setResistance(1.0F)
 			.setUseInternalLight()
-			.setTextures("flowerpotmod:block/Arrangement_SimpleFlowerPot")
+			.setNorthTexture("flowerpotmod:block/Arrangement_SimpleFlowerPot")
+			.setEastTexture("flowerpotmod:block/Arrangement_SimpleFlowerPot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_SimpleFlowerPot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_SimpleFlowerPot")
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_SimpleFlowerPot("flowerpot_simpletop", BlockID + ID_Simple + 1);
 		custom_block_builder3.build(custom_block);
 
+		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
 		BlockBuilder custom_block_builder7 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
 			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
 			.setResistance(1.0F)
 			.setUseInternalLight()
-			.setTextures("flowerpotmod:block/Arrangement_VariedFlowerPot")
+			.setNorthTexture("flowerpotmod:block/Arrangement_VariedFlowerPot")
+			.setEastTexture("flowerpotmod:block/Arrangement_VariedFlowerPot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_VariedFlowerPot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_VariedFlowerPot")
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_VariedFlowerPot("flowerpot_variedtop", BlockID + ID_Varied + 1);
 		custom_block_builder7.build(custom_block);
 
+		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
 		BlockBuilder custom_block_builder8 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
 			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
 			.setResistance(1.0F)
 			.setUseInternalLight()
-			.setTextures("flowerpotmod:block/Arrangement_WarmFlowerPot")
+			.setNorthTexture("flowerpotmod:block/Arrangement_WarmFlowerPot")
+			.setEastTexture("flowerpotmod:block/Arrangement_WarmFlowerPot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_WarmFlowerPot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_WarmFlowerPot")
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_WarmFlowerPot("flowerpot_warmtop", BlockID + ID_Warm + 1);
 		custom_block_builder8.build(custom_block);
 
+		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
 		BlockBuilder custom_block_builder9 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
 			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
 			.setResistance(1.0F)
 			.setUseInternalLight()
-			.setTextures("flowerpotmod:block/Arrangement_CoolFlowerPot")
+			.setNorthTexture("flowerpotmod:block/Arrangement_CoolFlowerPot")
+			.setEastTexture("flowerpotmod:block/Arrangement_CoolFlowerPot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_CoolFlowerPot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_CoolFlowerPot")
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_CoolFlowerPot("flowerpot_cooltop", BlockID + ID_Cool + 1);
 		custom_block_builder9.build(custom_block);
 
+		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
 		BlockBuilder custom_block_builder10 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
 			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
 			.setResistance(1.0F)
 			.setUseInternalLight()
-			.setTextures("flowerpotmod:block/Arrangement_WeedFlowerPot")
+			.setNorthTexture("flowerpotmod:block/Arrangement_WeedFlowerPot")
+			.setEastTexture("flowerpotmod:block/Arrangement_WeedFlowerPot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_WeedFlowerPot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_WeedFlowerPot")
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_WeedFlowerPot("flowerpot_weedtop", BlockID + ID_Weed + 1);

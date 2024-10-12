@@ -23,6 +23,7 @@ import turniplabs.halplibe.util.RecipeEntrypoint;
 // there are sections labeled BOTTOM and TOP
 // copy a block builder in each section and place ID_[name], or ID_[name] + 1, for bottom and top blocks
 // then set the names to be your new java files, and define the texture locations
+// make sure there's a flipped version of the sprite!
 //
 // Finally, go to FlowerPotMod_Recipes
 // place your new ID_[name] in the flowerpots array

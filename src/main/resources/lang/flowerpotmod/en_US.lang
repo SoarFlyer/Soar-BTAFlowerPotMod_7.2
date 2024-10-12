@@ -1,10 +1,23 @@
-tile.FlowerPotMod.flowerpot_simplebottom.name=Basic Flower Pot
-tile.FlowerPotMod.flowerpot_simplebottom.desc=A simple arrangement of common flowers.
+tile.FlowerPotMod.flowerpot_simplebottom.name=Simple Flower Pot
+tile.FlowerPotMod.flowerpot_simplebottom.desc=A basic arrangement of common flowers.
 tile.FlowerPotMod.flowerpot_variedbottom.name=Varied Flower Pot
 tile.FlowerPotMod.flowerpot_variedbottom.desc=A bustling arrangement of assorted flowers.
 tile.FlowerPotMod.flowerpot_warmbottom.name=Warm Flower Pot
 tile.FlowerPotMod.flowerpot_warmbottom.desc=A cozy arrangement of heat loving flowers.
 tile.FlowerPotMod.flowerpot_coolbottom.name=Cool Flower Pot
-tile.FlowerPotMod.flowerpot_coolbottom.desc=A freezing arrangement of cold tolerant flowers.
+tile.FlowerPotMod.flowerpot_coolbottom.desc=A frigid arrangement of cold tolerant flowers.
 tile.FlowerPotMod.flowerpot_weedbottom.name=Weed Flower Pot
 tile.FlowerPotMod.flowerpot_weedbottom.desc=A strange arrangement of weeds.
+
+tile.FlowerPotMod.flowerpot_simpletop.name=Simple Flower Bouquet
+tile.FlowerPotMod.flowerpot_simpletop.desc=A basic arrangement of common flowers.
+tile.FlowerPotMod.flowerpot_variedtop.name=Varied Flower Bouquet
+tile.FlowerPotMod.flowerpot_variedtop.desc=A bustling arrangement of assorted flowers.
+tile.FlowerPotMod.flowerpot_warmtop.name=Warm Flower Bouquet
+tile.FlowerPotMod.flowerpot_warmtop.desc=A cozy arrangement of heat loving flowers.
+tile.FlowerPotMod.flowerpot_cooltop.name=Cool Flower Bouquet
+tile.FlowerPotMod.flowerpot_cooltop.desc=A frigid arrangement of cold tolerant flowers.
+tile.FlowerPotMod.flowerpot_weedtop.name=Weed Flower Bouquet
+tile.FlowerPotMod.flowerpot_weedtop.desc=A strange arrangement of weeds.
+
+
