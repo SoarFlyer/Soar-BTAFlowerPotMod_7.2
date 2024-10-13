@@ -59,7 +59,8 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
 	public static final int ID_Eucalyptus= 23;
 	public static final int ID_Shrub = 25;
 	public static final int ID_Mossy = 27;
-	public static final int ID_Retro = 29;
+	public static final int ID_Cocoa = 29;
+	public static final int ID_Retro = 31;
 
 
     @Override

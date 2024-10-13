@@ -236,8 +236,22 @@ public class BlockInitializer {
 			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
 			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
 
-		custom_block = new Bottom_RetroTreePot("flowerpot_retrobottom", BlockID + ID_Retro);
+		custom_block = new Bottom_CocoaTreePot("flowerpot_cocoabottom", BlockID + ID_Cocoa);
 		custom_bottom_builder15.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder16 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_RetroTreePot("flowerpot_retrobottom", BlockID + ID_Retro);
+		custom_bottom_builder16.build(custom_block);
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		///// TOP
@@ -474,6 +488,22 @@ public class BlockInitializer {
 			.setHardness(1.0F)
 			.setResistance(1.0F)
 			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_CocoaTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_CocoaTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_CocoaTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_CocoaTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_CocoaTreePot("flowerpot_cocoatop", BlockID + ID_Cocoa + 1);
+		custom_top_builder15.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder16 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
 			.setNorthTexture("flowerpotmod:block/Arrangement_RetroTreePot")
 			.setEastTexture("flowerpotmod:block/Arrangement_RetroTreePot")
 			.setSouthTexture("flowerpotmod:block/ArrangementF_RetroTreePot")
@@ -481,6 +511,6 @@ public class BlockInitializer {
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_RetroTreePot("flowerpot_retrotop", BlockID + ID_Retro + 1);
-		custom_top_builder15.build(custom_block);
+		custom_top_builder16.build(custom_block);
 	}
 }

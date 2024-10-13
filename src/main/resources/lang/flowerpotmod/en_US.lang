@@ -1,12 +1,12 @@
-tile.FlowerPotMod.flowerpot_simplebottom.name=Simple Flower Pot
+tile.FlowerPotMod.flowerpot_simplebottom.name=Simple Flowerpot
 tile.FlowerPotMod.flowerpot_simplebottom.desc=A basic arrangement of common flowers.
-tile.FlowerPotMod.flowerpot_variedbottom.name=Varied Flower Pot
+tile.FlowerPotMod.flowerpot_variedbottom.name=Varied Flowerpot
 tile.FlowerPotMod.flowerpot_variedbottom.desc=A bustling arrangement of assorted flowers.
-tile.FlowerPotMod.flowerpot_warmbottom.name=Warm Flower Pot
+tile.FlowerPotMod.flowerpot_warmbottom.name=Warm Flowerpot
 tile.FlowerPotMod.flowerpot_warmbottom.desc=A cozy arrangement of heat loving flowers.
-tile.FlowerPotMod.flowerpot_coolbottom.name=Cool Flower Pot
+tile.FlowerPotMod.flowerpot_coolbottom.name=Cool Flowerpot
 tile.FlowerPotMod.flowerpot_coolbottom.desc=A frigid arrangement of cold tolerant flowers.
-tile.FlowerPotMod.flowerpot_weedbottom.name=Weed Flower Pot
+tile.FlowerPotMod.flowerpot_weedbottom.name=Weed Flowerpot
 tile.FlowerPotMod.flowerpot_weedbottom.desc=A strange arrangement of weeds.
 
 tile.FlowerPotMod.flowerpot_simpletop.name=Simple Flower Bouquet
@@ -22,25 +22,27 @@ tile.FlowerPotMod.flowerpot_weedtop.desc=A strange arrangement of weeds.
 
 
 tile.FlowerPotMod.flowerpot_oakbottom.name=Oak Tree Pot
-tile.FlowerPotMod.flowerpot_oakbottom.desc=A potted miniature oak tree.
+tile.FlowerPotMod.flowerpot_oakbottom.desc=A miniature oak tree.
 tile.FlowerPotMod.flowerpot_birchbottom.name=Birch Tree Pot
-tile.FlowerPotMod.flowerpot_birchbottom.desc=A potted miniature birch tree.
+tile.FlowerPotMod.flowerpot_birchbottom.desc=A miniature birch tree.
 tile.FlowerPotMod.flowerpot_pinebottom.name=Pine Tree Pot
-tile.FlowerPotMod.flowerpot_pinebottom.desc=A potted miniature pine tree.
+tile.FlowerPotMod.flowerpot_pinebottom.desc=A miniature pine tree.
 tile.FlowerPotMod.flowerpot_cherrybottom.name=Cherry Tree Pot
-tile.FlowerPotMod.flowerpot_cherrybottom.desc=A potted miniature cherry tree.
+tile.FlowerPotMod.flowerpot_cherrybottom.desc=A miniature cherry tree.
 tile.FlowerPotMod.flowerpot_palmbottom.name=Palm Tree Pot
-tile.FlowerPotMod.flowerpot_palmbottom.desc=A potted miniature palm tree.
+tile.FlowerPotMod.flowerpot_palmbottom.desc=A miniature palm tree.
 tile.FlowerPotMod.flowerpot_thornbottom.name=Thorn Tree Pot
-tile.FlowerPotMod.flowerpot_thornbottom.desc=A potted miniature thorn tree.
+tile.FlowerPotMod.flowerpot_thornbottom.desc=A miniature thorn tree.
 tile.FlowerPotMod.flowerpot_eucalyptusbottom.name=Eucalyptus Tree Pot
-tile.FlowerPotMod.flowerpot_eucalyptusbottom.desc=A potted miniature eucalyptus tree.
+tile.FlowerPotMod.flowerpot_eucalyptusbottom.desc=A miniature eucalyptus tree.
 tile.FlowerPotMod.flowerpot_shrubbottom.name=Shrub Tree Pot
-tile.FlowerPotMod.flowerpot_shrubbottom.desc=A potted miniature shrub.
+tile.FlowerPotMod.flowerpot_shrubbottom.desc=A miniature shrub.
 tile.FlowerPotMod.flowerpot_mossybottom.name=Mossy Tree Pot
-tile.FlowerPotMod.flowerpot_mossybottom.desc=A potted miniature oak tree, covered in moss.
+tile.FlowerPotMod.flowerpot_mossybottom.desc=A miniature oak tree, covered in moss.
+tile.FlowerPotMod.flowerpot_cocoabottom.name=Cocoa Tree Pot
+tile.FlowerPotMod.flowerpot_cocoabottom.desc=A miniature cocoa tree.
 tile.FlowerPotMod.flowerpot_retrobottom.name=Retro Tree Pot
-tile.FlowerPotMod.flowerpot_retrobottom.desc=A potted miniature oak tree, from a faraway land.
+tile.FlowerPotMod.flowerpot_retrobottom.desc=A miniature oak tree, from a faraway land.
 
 
 tile.FlowerPotMod.flowerpot_oaktop.name=Miniature Oak Tree
@@ -61,5 +63,7 @@ tile.FlowerPotMod.flowerpot_shrubtop.name=Miniature Shrub Tree
 tile.FlowerPotMod.flowerpot_shrubtop.desc=A miniature shrub.
 tile.FlowerPotMod.flowerpot_mossytop.name=Miniature Mossy Tree
 tile.FlowerPotMod.flowerpot_mossytop.desc=A miniature oak tree, covered in moss.
+tile.FlowerPotMod.flowerpot_cocoatop.name=Miniature Cocoa Tree
+tile.FlowerPotMod.flowerpot_cocoatop.desc=A miniature cocoa tree.
 tile.FlowerPotMod.flowerpot_retrotop.name=Miniature Retro Tree
 tile.FlowerPotMod.flowerpot_retrotop.desc=A miniature oak tree, from a faraway land.
