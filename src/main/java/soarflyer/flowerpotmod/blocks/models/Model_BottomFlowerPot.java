@@ -15,7 +15,7 @@ public class Model_BottomFlowerPot<T extends Block> extends BlockModelStandard<T
 	@Override
 	public boolean render(Tessellator tessellator, int x, int y, int z) {
 
-		renderBlocks.enableAO = false;
+		renderBlocks.enableAO = false; // does this work?????
 		RenderBlocks.enableDirectionalLight = false;
 
 		boolean flag = false;

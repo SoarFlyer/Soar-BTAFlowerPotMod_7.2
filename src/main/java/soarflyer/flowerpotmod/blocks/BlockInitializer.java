@@ -7,16 +7,11 @@ import soarflyer.flowerpotmod.blocks.flowerpots.*;
 import soarflyer.flowerpotmod.blocks.models.Model_BottomFlowerPot;
 import soarflyer.flowerpotmod.blocks.models.Model_TopFlowerPot;
 import turniplabs.halplibe.helper.BlockBuilder;
-import turniplabs.halplibe.util.ConfigHandler;
-
-import java.util.Properties;
 
 import static soarflyer.flowerpotmod.FlowerPotMod.*;
 
 public class BlockInitializer {
-
 	public static Block custom_block;
-
 	public void Initialize() {
 
 		/// this is so dumb
@@ -253,9 +248,11 @@ public class BlockInitializer {
 		custom_block = new Bottom_RetroTreePot("flowerpot_retrobottom", BlockID + ID_Retro);
 		custom_bottom_builder16.build(custom_block);
 
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		///// TOP
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
 		BlockBuilder custom_top_builder1 = standard_block_builder

@@ -38,7 +38,7 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static final int BlockID = 14120;
-	public static final int BlockIDMax = 50; // this is so tops can exist on different bottoms,
+	public static final int BlockIDMax = 31; // this is so tops can exist on different bottoms,
 	// and delete themselves if not on a block added by this mod
 
 	// Create bottom block, block ID set to BlockID + ID_[]

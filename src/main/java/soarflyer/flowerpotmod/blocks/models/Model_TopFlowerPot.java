@@ -14,10 +14,11 @@ public class Model_TopFlowerPot<T extends Block> extends BlockModelStandard<T> {
 	public boolean render(Tessellator tessellator, int x, int y, int z) {
 		this.block.setBlockBoundsBasedOnState(renderBlocks.blockAccess, x, y, z);
 
-		renderBlocks.enableAO = false;
+		renderBlocks.enableAO = false; // does this work?????
 		RenderBlocks.enableDirectionalLight = false;
 
 		// I could not get texture flipping to work without an actual flipped .png file for some reason
+		// spent too much on this problem I give up who caaares
 		boolean flag = false;
 		// Draw North
 		block.setBlockBounds(1, -0.5, 0.5625, 0, 0.5, 0.5625);
@@ -39,7 +40,6 @@ public class Model_TopFlowerPot<T extends Block> extends BlockModelStandard<T> {
 
 		this.block.setBlockBoundsBasedOnState(BlockModelStandard.renderBlocks.blockAccess, x, y, z);
 		return flag;
-
 	}
 
 
