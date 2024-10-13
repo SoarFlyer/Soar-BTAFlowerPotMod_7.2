@@ -19,7 +19,6 @@ public class Model_BottomFlowerPot<T extends Block> extends BlockModelStandard<T
 		RenderBlocks.enableDirectionalLight = false;
 
 		boolean flag = false;
-		// Draw the lower cube of the model
 		block.setBlockBounds(0.1875, 0, 0.1875, 0.8125, 0.5, 0.8125);
 		flag |= this.renderStandardBlock(tessellator, this.block, x, y, z);
 
@@ -27,6 +26,9 @@ public class Model_BottomFlowerPot<T extends Block> extends BlockModelStandard<T
 		return flag;
 	}
 
+
+	// Inventory model
+	// -----------------------------------------------------------------------------------------------------------------------------------
 	@Override
 	public void renderBlockOnInventory(Tessellator tessellator, int metadata, float brightness, float alpha, @Nullable Integer lightmapCoordinate) {
 		// Draw the lower cube of the model

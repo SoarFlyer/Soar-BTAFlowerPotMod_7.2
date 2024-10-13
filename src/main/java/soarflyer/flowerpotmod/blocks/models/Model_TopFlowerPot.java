@@ -17,22 +17,23 @@ public class Model_TopFlowerPot<T extends Block> extends BlockModelStandard<T> {
 		renderBlocks.enableAO = false;
 		RenderBlocks.enableDirectionalLight = false;
 
+		// I could not get texture flipping to work without an actual flipped .png file for some reason
 		boolean flag = false;
-		// Draw the upper cube of the model
-		block.setBlockBounds(1, -0.5, 0.575, 0, 0.5, 0.575);
+		// Draw North
+		block.setBlockBounds(1, -0.5, 0.5625, 0, 0.5, 0.5625);
 			renderBlocks.flipTexture = true;
 		flag |= this.renderStandardBlock(tessellator, this.block, x ,y ,z );
-		//mirror
-		block.setBlockBounds(1, -0.5, 0.425, 0, 0.5, 0.425);
+		// Draw South
+		block.setBlockBounds(1, -0.5, 0.4375, 0, 0.5, 0.4375);
 			renderBlocks.flipTexture = false;
 		flag |= this.renderStandardBlock(tessellator, this.block, x, y, z);
 
-		// Draw the upper cube of the model
-		block.setBlockBounds(0.425, -0.5, 1, 0.425, 0.5, 0);
+		// Draw West
+		block.setBlockBounds(0.4375, -0.5, 1, 0.4375, 0.5, 0);
 			renderBlocks.flipTexture = true;
 		flag |= this.renderStandardBlock(tessellator, this.block, x, y, z);
-		//mirror
-		block.setBlockBounds(0.575, -0.5, 1, 0.575, 0.5, 0);
+		// Draw East
+		block.setBlockBounds(0.5625, -0.5, 1, 0.5625, 0.5, 0);
 			renderBlocks.flipTexture = false;
 		flag |= this.renderStandardBlock(tessellator, this.block, x, y, z);
 
@@ -41,17 +42,20 @@ public class Model_TopFlowerPot<T extends Block> extends BlockModelStandard<T> {
 
 	}
 
+
+	// Inventory model
+	// -----------------------------------------------------------------------------------------------------------------------------------
 	@Override
 	public void renderBlockOnInventory(Tessellator tessellator, int metadata, float brightness, float alpha, @Nullable Integer lightmapCoordinate) {
-		// Draw the lower cube of the model
-		block.setBlockBounds(0, 0.0, 0.425, 1, 1.0, 0.425);
-		//mirror
-		block.setBlockBounds(1, 0.0, 0.575, 0, 1.0, 0.575);
+		// Draw North
+		block.setBlockBounds(1, 0, 0.5625, 0, 1, 0.5625);
+		// Draw South
+		block.setBlockBounds(1, 0, 0.4375, 0, 1, 0.4375);
 
-		// Draw the upper cube of the model
-		block.setBlockBounds(0.425, 0.0, 0, 0.425, 1.0, 1);
-		//mirror
-		block.setBlockBounds(0.575, 0.0, 1, 0.575, 1.0, 0);
+		// Draw West
+		block.setBlockBounds(0.4375, 0, 1, 0.4375, 1, 0);
+		// Draw East
+		block.setBlockBounds(0.5625, 0, 1, 0.5625, 1, 0);
 		super.renderBlockOnInventory(tessellator, metadata, 15.0f, alpha, lightmapCoordinate);
 	}
 }

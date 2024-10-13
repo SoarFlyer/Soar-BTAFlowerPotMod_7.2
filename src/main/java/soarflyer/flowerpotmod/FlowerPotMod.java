@@ -23,7 +23,7 @@ import turniplabs.halplibe.util.RecipeEntrypoint;
 // there are sections labeled BOTTOM and TOP
 // copy a block builder in each section and place ID_[name], or ID_[name] + 1, for bottom and top blocks
 // then set the names to be your new java files, and define the texture locations
-// make sure there's a flipped version of the sprite!
+// make sure there's a flipped version of the sprite, if it's a top!
 //
 // Finally, go to FlowerPotMod_Recipes
 // place your new ID_[name] in the flowerpots array
@@ -38,6 +38,8 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static final int BlockID = 14120;
+	public static final int BlockIDMax = 50; // this is so tops can exist on different bottoms,
+	// and delete themselves if not on a block added by this mod
 
 	// Create bottom block, block ID set to BlockID + ID_[]
 	// Create top block, block ID set to BlockID + ID_[] + 1
@@ -47,6 +49,17 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
 	public static final int ID_Warm = 5;
 	public static final int ID_Cool = 7;
 	public static final int ID_Weed = 9;
+
+	public static final int ID_Oak = 11;
+	public static final int ID_Birch = 13;
+	public static final int ID_Pine = 15;
+	public static final int ID_Cherry = 17;
+	public static final int ID_Palm = 19;
+	public static final int ID_Thorn = 21;
+	public static final int ID_Eucalyptus= 23;
+	public static final int ID_Shrub = 25;
+	public static final int ID_Mossy = 27;
+	public static final int ID_Retro = 29;
 
 
     @Override

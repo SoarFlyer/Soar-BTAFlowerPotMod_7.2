@@ -21,3 +21,45 @@ tile.FlowerPotMod.flowerpot_weedtop.name=Weed Flower Bouquet
 tile.FlowerPotMod.flowerpot_weedtop.desc=A strange arrangement of weeds.
 
 
+tile.FlowerPotMod.flowerpot_oakbottom.name=Oak Tree Pot
+tile.FlowerPotMod.flowerpot_oakbottom.desc=A potted miniature oak tree.
+tile.FlowerPotMod.flowerpot_birchbottom.name=Birch Tree Pot
+tile.FlowerPotMod.flowerpot_birchbottom.desc=A potted miniature birch tree.
+tile.FlowerPotMod.flowerpot_pinebottom.name=Pine Tree Pot
+tile.FlowerPotMod.flowerpot_pinebottom.desc=A potted miniature pine tree.
+tile.FlowerPotMod.flowerpot_cherrybottom.name=Cherry Tree Pot
+tile.FlowerPotMod.flowerpot_cherrybottom.desc=A potted miniature cherry tree.
+tile.FlowerPotMod.flowerpot_palmbottom.name=Palm Tree Pot
+tile.FlowerPotMod.flowerpot_palmbottom.desc=A potted miniature palm tree.
+tile.FlowerPotMod.flowerpot_thornbottom.name=Thorn Tree Pot
+tile.FlowerPotMod.flowerpot_thornbottom.desc=A potted miniature thorn tree.
+tile.FlowerPotMod.flowerpot_eucalyptusbottom.name=Eucalyptus Tree Pot
+tile.FlowerPotMod.flowerpot_eucalyptusbottom.desc=A potted miniature eucalyptus tree.
+tile.FlowerPotMod.flowerpot_shrubbottom.name=Shrub Tree Pot
+tile.FlowerPotMod.flowerpot_shrubbottom.desc=A potted miniature shrub.
+tile.FlowerPotMod.flowerpot_mossybottom.name=Mossy Tree Pot
+tile.FlowerPotMod.flowerpot_mossybottom.desc=A potted miniature oak tree, covered in moss.
+tile.FlowerPotMod.flowerpot_retrobottom.name=Retro Tree Pot
+tile.FlowerPotMod.flowerpot_retrobottom.desc=A potted miniature oak tree, from a faraway land.
+
+
+tile.FlowerPotMod.flowerpot_oaktop.name=Miniature Oak Tree
+tile.FlowerPotMod.flowerpot_oaktop.desc=A miniature oak tree.
+tile.FlowerPotMod.flowerpot_birchtop.name=Miniature Birch Tree
+tile.FlowerPotMod.flowerpot_birchtop.desc=A miniature birch tree.
+tile.FlowerPotMod.flowerpot_pinetop.name=Miniature Pine Tree
+tile.FlowerPotMod.flowerpot_pinetop.desc=A miniature pine tree.
+tile.FlowerPotMod.flowerpot_cherrytop.name=Miniature Cherry Tree
+tile.FlowerPotMod.flowerpot_cherrytop.desc=A miniature cherry tree.
+tile.FlowerPotMod.flowerpot_palmtop.name=Miniature Palm Tree
+tile.FlowerPotMod.flowerpot_palmtop.desc=A miniature palm tree.
+tile.FlowerPotMod.flowerpot_thorntop.name=Miniature Thorn Tree
+tile.FlowerPotMod.flowerpot_thorntop.desc=A miniature thorn tree.
+tile.FlowerPotMod.flowerpot_eucalyptustop.name=Miniature Eucalyptus Tree
+tile.FlowerPotMod.flowerpot_eucalyptustop.desc=A miniature eucalyptus tree.
+tile.FlowerPotMod.flowerpot_shrubtop.name=Miniature Shrub Tree
+tile.FlowerPotMod.flowerpot_shrubtop.desc=A miniature shrub.
+tile.FlowerPotMod.flowerpot_mossytop.name=Miniature Mossy Tree
+tile.FlowerPotMod.flowerpot_mossytop.desc=A miniature oak tree, covered in moss.
+tile.FlowerPotMod.flowerpot_retrotop.name=Miniature Retro Tree
+tile.FlowerPotMod.flowerpot_retrotop.desc=A miniature oak tree, from a faraway land.

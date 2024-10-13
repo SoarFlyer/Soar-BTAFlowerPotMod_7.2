@@ -10,8 +10,7 @@ import net.minecraft.core.world.WorldSource;
 
 import java.util.ArrayList;
 
-import static soarflyer.flowerpotmod.FlowerPotMod.BlockID;
-import static soarflyer.flowerpotmod.FlowerPotMod.ID_Simple;
+import static soarflyer.flowerpotmod.FlowerPotMod.*;
 
 public class Top_SimpleFlowerPot extends Block {
 	public Top_SimpleFlowerPot(String key, int id) {
@@ -33,6 +32,19 @@ public class Top_SimpleFlowerPot extends Block {
 		if (MyID == ChangeTopID && DownID == 0) {
 			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
 		}
+	}
+
+	public void onBlockPlaced(World world, int x, int y, int z, Side side, EntityLiving entity, double sideHeight) {
+		int MyID = world.getBlockId(x, y, z);
+		int UpID = world.getBlockId(x, y + 1, z);
+		int DownID = world.getBlockId(x, y - 1, z);
+		if (MyID == ChangeTopID && DownID < BlockID) {
+				world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
+		}
+		if (MyID == ChangeTopID && DownID > BlockID + BlockIDMax) {
+				world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
+		}
+
 	}
 
 	@Override

@@ -28,8 +28,8 @@ public class BlockInitializer {
 
 		BlockBuilder standard_block_builder = new BlockBuilder(MOD_ID); // BlockBuilder is available from Halplibe since 7.1
 
-		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
-		BlockBuilder custom_block_builder1 = standard_block_builder
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder1 = standard_block_builder
 			.setBlockModel(Model_BottomFlowerPot::new)
 			.setBlockSound(BlockSounds.STONE)
 			.setHardness(0.5F)
@@ -41,10 +41,10 @@ public class BlockInitializer {
 
 
 		custom_block = new Bottom_SimpleFlowerPot("flowerpot_simplebottom", BlockID + ID_Simple);
-		custom_block_builder1.build(custom_block);
+		custom_bottom_builder1.build(custom_block);
 
-		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
-		BlockBuilder custom_block_builder2 = standard_block_builder
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder2 = standard_block_builder
 			.setBlockModel(Model_BottomFlowerPot::new)
 			.setBlockSound(BlockSounds.STONE)
 			.setHardness(0.5F)
@@ -55,10 +55,10 @@ public class BlockInitializer {
 			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
 
 		custom_block = new Bottom_VariedFlowerPot("flowerpot_variedbottom", BlockID + ID_Varied);
-		custom_block_builder2.build(custom_block);
+		custom_bottom_builder2.build(custom_block);
 
-		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
-		BlockBuilder custom_block_builder4 = standard_block_builder
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder3 = standard_block_builder
 			.setBlockModel(Model_BottomFlowerPot::new)
 			.setBlockSound(BlockSounds.STONE)
 			.setHardness(0.5F)
@@ -69,10 +69,10 @@ public class BlockInitializer {
 			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
 
 		custom_block = new Bottom_WarmFlowerPot("flowerpot_warmbottom", BlockID + ID_Warm);
-		custom_block_builder4.build(custom_block);
+		custom_bottom_builder3.build(custom_block);
 
-		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
-		BlockBuilder custom_block_builder5 = standard_block_builder
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder4 = standard_block_builder
 			.setBlockModel(Model_BottomFlowerPot::new)
 			.setBlockSound(BlockSounds.STONE)
 			.setHardness(0.5F)
@@ -83,10 +83,10 @@ public class BlockInitializer {
 			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
 
 		custom_block = new Bottom_CoolFlowerPot("flowerpot_coolbottom", BlockID + ID_Cool);
-		custom_block_builder5.build(custom_block);
+		custom_bottom_builder4.build(custom_block);
 
-		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
-		BlockBuilder custom_block_builder6 = standard_block_builder
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_block_builder5 = standard_block_builder
 			.setBlockModel(Model_BottomFlowerPot::new)
 			.setBlockSound(BlockSounds.STONE)
 			.setHardness(0.5F)
@@ -97,14 +97,154 @@ public class BlockInitializer {
 			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
 
 		custom_block = new Bottom_WeedFlowerPot("flowerpot_weedbottom", BlockID + ID_Weed);
-		custom_block_builder6.build(custom_block);
+		custom_block_builder5.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder6 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_OakTreePot("flowerpot_oakbottom", BlockID + ID_Oak);
+		custom_bottom_builder6.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder7 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_BirchTreePot("flowerpot_birchbottom", BlockID + ID_Birch);
+		custom_bottom_builder7.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder8 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_PineTreePot("flowerpot_pinebottom", BlockID + ID_Pine);
+		custom_bottom_builder8.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder9 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_CherryTreePot("flowerpot_cherrybottom", BlockID + ID_Cherry);
+		custom_bottom_builder9.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder10 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_PalmTreePot("flowerpot_palmbottom", BlockID + ID_Palm);
+		custom_bottom_builder10.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder11 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_ThornTreePot("flowerpot_thornbottom", BlockID + ID_Thorn);
+		custom_bottom_builder11.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder12 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_EucalyptusTreePot("flowerpot_eucalyptusbottom", BlockID + ID_Eucalyptus);
+		custom_bottom_builder12.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder13 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_ShrubTreePot("flowerpot_shrubbottom", BlockID + ID_Shrub);
+		custom_bottom_builder13.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder14 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_MossyTreePot("flowerpot_mossybottom", BlockID + ID_Mossy);
+		custom_bottom_builder14.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder15 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_TreePot")
+			.setSideTextures("flowerpotmod:block/Side_TreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_RetroTreePot("flowerpot_retrobottom", BlockID + ID_Retro);
+		custom_bottom_builder15.build(custom_block);
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		///// TOP
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
-		BlockBuilder custom_block_builder3 = standard_block_builder
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder1 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
 			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
@@ -117,10 +257,10 @@ public class BlockInitializer {
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_SimpleFlowerPot("flowerpot_simpletop", BlockID + ID_Simple + 1);
-		custom_block_builder3.build(custom_block);
+		custom_top_builder1.build(custom_block);
 
-		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
-		BlockBuilder custom_block_builder7 = standard_block_builder
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder2 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
 			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
@@ -133,10 +273,10 @@ public class BlockInitializer {
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_VariedFlowerPot("flowerpot_variedtop", BlockID + ID_Varied + 1);
-		custom_block_builder7.build(custom_block);
+		custom_top_builder2.build(custom_block);
 
-		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
-		BlockBuilder custom_block_builder8 = standard_block_builder
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder3 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
 			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
@@ -149,10 +289,10 @@ public class BlockInitializer {
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_WarmFlowerPot("flowerpot_warmtop", BlockID + ID_Warm + 1);
-		custom_block_builder8.build(custom_block);
+		custom_top_builder3.build(custom_block);
 
-		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
-		BlockBuilder custom_block_builder9 = standard_block_builder
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder4 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
 			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
@@ -165,10 +305,10 @@ public class BlockInitializer {
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_CoolFlowerPot("flowerpot_cooltop", BlockID + ID_Cool + 1);
-		custom_block_builder9.build(custom_block);
+		custom_top_builder4.build(custom_block);
 
-		// Creating blocks ////////////////////////////////////////////////////////////////////////////////////
-		BlockBuilder custom_block_builder10 = standard_block_builder
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder5 = standard_block_builder
 			.setBlockModel(Model_TopFlowerPot::new)
 			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
@@ -181,6 +321,166 @@ public class BlockInitializer {
 			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
 
 		custom_block = new Top_WeedFlowerPot("flowerpot_weedtop", BlockID + ID_Weed + 1);
-		custom_block_builder10.build(custom_block);
+		custom_top_builder5.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder6 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_OakTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_OakTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_OakTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_OakTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_OakTreePot("flowerpot_oaktop", BlockID + ID_Oak + 1);
+		custom_top_builder6.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder7 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_BirchTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_BirchTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_BirchTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_BirchTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_BirchTreePot("flowerpot_birchtop", BlockID + ID_Birch + 1);
+		custom_top_builder7.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder8 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_PineTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_PineTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_PineTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_PineTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_PineTreePot("flowerpot_pinetop", BlockID + ID_Pine + 1);
+		custom_top_builder8.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder9 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_CherryTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_CherryTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_CherryTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_CherryTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_CherryTreePot("flowerpot_cherrytop", BlockID + ID_Cherry + 1);
+		custom_top_builder9.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder10 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_PalmTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_PalmTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_PalmTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_PalmTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_PalmTreePot("flowerpot_palmtop", BlockID + ID_Palm + 1);
+		custom_top_builder10.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder11 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_ThornTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_ThornTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_ThornTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_ThornTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_ThornTreePot("flowerpot_palmtop", BlockID + ID_Thorn + 1);
+		custom_top_builder11.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder12 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_EucalyptusTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_EucalyptusTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_EucalyptusTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_EucalyptusTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_EucalyptusTreePot("flowerpot_eucalyptustop", BlockID + ID_Eucalyptus + 1);
+		custom_top_builder12.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder13 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_ShrubTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_ShrubTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_ShrubTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_ShrubTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_ShrubTreePot("flowerpot_shrubtop", BlockID + ID_Shrub + 1);
+		custom_top_builder13.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder14 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_MossyTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_MossyTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_MossyTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_MossyTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_MossyTreePot("flowerpot_mossytop", BlockID + ID_Mossy + 1);
+		custom_top_builder14.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder15 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_RetroTreePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_RetroTreePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_RetroTreePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_RetroTreePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_RetroTreePot("flowerpot_retrotop", BlockID + ID_Retro + 1);
+		custom_top_builder15.build(custom_block);
 	}
 }

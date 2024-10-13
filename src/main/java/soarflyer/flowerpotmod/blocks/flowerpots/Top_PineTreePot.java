@@ -4,18 +4,22 @@ import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.entity.EntityLiving;
 import net.minecraft.core.util.helper.Side;
+import net.minecraft.core.util.phys.AABB;
 import net.minecraft.core.world.World;
+import net.minecraft.core.world.WorldSource;
+
+import java.util.ArrayList;
 
 import static soarflyer.flowerpotmod.FlowerPotMod.*;
 
-public class Top_WeedFlowerPot extends Block {
-	public Top_WeedFlowerPot(String key, int id) {
+public class Top_PineTreePot extends Block {
+	public Top_PineTreePot(String key, int id) {
 		super(key, id, Material.plant);
 	}
 
 	/// Change this when making new blocks
-	int ChangeID = BlockID + ID_Weed;
-	int ChangeTopID = BlockID + ID_Weed + 1;
+	int ChangeID = BlockID + ID_Pine;
+	int ChangeTopID = BlockID + ID_Pine + 1;
 
 
 	// Be aware that there's no selection box
