@@ -1,3 +1,61 @@
+tile.FlowerPotMod.flowerpot_rosebottom.name=Rose Flowerpot
+tile.FlowerPotMod.flowerpot_rosebottom.desc=A lush bundle of roses.
+tile.FlowerPotMod.flowerpot_rosetop.name=Rose Flower Bouquet
+tile.FlowerPotMod.flowerpot_rosetop.desc=A lush bundle of roses.
+
+tile.FlowerPotMod.flowerpot_dandelionbottom.name=Dandelion Flowerpot
+tile.FlowerPotMod.flowerpot_dandelionbottom.desc=A lush bundle of dandelions.
+tile.FlowerPotMod.flowerpot_dandeliontop.name=Dandelion Flower Bouquet
+tile.FlowerPotMod.flowerpot_dandeliontop.desc=A lush bundle of dandelions.
+
+tile.FlowerPotMod.flowerpot_marigoldbottom.name=Marigold Flowerpot
+tile.FlowerPotMod.flowerpot_marigoldbottom.desc=A lush bundle of marigolds.
+tile.FlowerPotMod.flowerpot_marigoldtop.name=Marigold Flower Bouquet
+tile.FlowerPotMod.flowerpot_marigoldtop.desc=A lush bundle of marigolds.
+
+tile.FlowerPotMod.flowerpot_bluebellbottom.name=Bluebell Flowerpot
+tile.FlowerPotMod.flowerpot_bluebellbottom.desc=A lush bundle of bluebells.
+tile.FlowerPotMod.flowerpot_bluebelltop.name=Bluebell Flower Bouquet
+tile.FlowerPotMod.flowerpot_bluebelltop.desc=A lush bundle of bluebells.
+
+tile.FlowerPotMod.flowerpot_heatherbottom.name=Heather Flowerpot
+tile.FlowerPotMod.flowerpot_heatherbottom.desc=A lush bundle of heather.
+tile.FlowerPotMod.flowerpot_heathertop.name=Heather Flower Bouquet
+tile.FlowerPotMod.flowerpot_heathertop.desc=A lush bundle of heather.
+
+tile.FlowerPotMod.flowerpot_orchidbottom.name=Orchid Flowerpot
+tile.FlowerPotMod.flowerpot_orchidbottom.desc=A lush bundle of orchid.
+tile.FlowerPotMod.flowerpot_orchidtop.name=Orchid Flower Bouquet
+tile.FlowerPotMod.flowerpot_orchidtop.desc=A lush bundle of orchid.
+
+tile.FlowerPotMod.flowerpot_glorybottom.name=Glory Flowerpot
+tile.FlowerPotMod.flowerpot_glorybottom.desc=A lush bundle of glories.
+tile.FlowerPotMod.flowerpot_glorytop.name=Glory Flower Bouquet
+tile.FlowerPotMod.flowerpot_glorytop.desc=A lush bundle of glories.
+
+tile.FlowerPotMod.flowerpot_wintergreenbottom.name=Wintergreen Flowerpot
+tile.FlowerPotMod.flowerpot_wintergreenbottom.desc=A lush bundle of wintergreen.
+tile.FlowerPotMod.flowerpot_wintergreentop.name=Wintergreens Flower Bouquet
+tile.FlowerPotMod.flowerpot_wintergreentop.desc=A lush bundle of wintergreen.
+
+tile.FlowerPotMod.flowerpot_nightshadebottom.name=Nightshade Flowerpot
+tile.FlowerPotMod.flowerpot_nightshadebottom.desc=A lush bundle of nightshade.
+tile.FlowerPotMod.flowerpot_nightshadetop.name=Nightshade Flower Bouquet
+tile.FlowerPotMod.flowerpot_nightshadetop.desc=A lush bundle of nightshade.
+
+
+tile.FlowerPotMod.flowerpot_gloryflower.name=Crossbred Glory
+tile.FlowerPotMod.flowerpot_gloryflower.desc=An icy flower from a faraway land, sterile.
+tile.FlowerPotMod.flowerpot_wintergreenflower.name=Crossbred Wintergreen
+tile.FlowerPotMod.flowerpot_wintergreenflower.desc=A boreal flower from a faraway land, sterile.
+tile.FlowerPotMod.flowerpot_nightshadeflower.name=Crossbred Nightshade
+tile.FlowerPotMod.flowerpot_nightshadeflower.desc=A creeping vine from a faraway land, sterile.
+
+tile.FlowerPotMod.flowerpot_whitemushroom.name=Crossbred White Mushroom.
+tile.FlowerPotMod.flowerpot_whitemushroom.desc=A rare mushroom from a faraway land, poisonous.
+
+
+
 tile.FlowerPotMod.flowerpot_simplebottom.name=Simple Flowerpot
 tile.FlowerPotMod.flowerpot_simplebottom.desc=A basic arrangement of common flowers.
 tile.FlowerPotMod.flowerpot_variedbottom.name=Varied Flowerpot
@@ -19,6 +77,25 @@ tile.FlowerPotMod.flowerpot_cooltop.name=Cool Flower Bouquet
 tile.FlowerPotMod.flowerpot_cooltop.desc=A frigid arrangement of cold tolerant flowers.
 tile.FlowerPotMod.flowerpot_weedtop.name=Weed Flower Bouquet
 tile.FlowerPotMod.flowerpot_weedtop.desc=A strange arrangement of weeds.
+
+
+tile.FlowerPotMod.flowerpot_shroombottom.name=Fungal Shroompot
+tile.FlowerPotMod.flowerpot_shroombottom.desc=An odd display of mushrooms.
+tile.FlowerPotMod.flowerpot_shroomtop.name=Fungal Shrouquet
+tile.FlowerPotMod.flowerpot_shroomtop.desc=An odd bundle of mushrooms.
+
+tile.FlowerPotMod.flowerpot_brownshroombottom.name=Brown Shroompot
+tile.FlowerPotMod.flowerpot_brownshroombottom.desc=A planted colony of brown mushrooms.
+tile.FlowerPotMod.flowerpot_brownshroomtop.name=Brown Shrouquet
+tile.FlowerPotMod.flowerpot_brownshroomtop.desc=An odd bundle of brown mushrooms.
+tile.FlowerPotMod.flowerpot_redshroombottom.name=Red Shroompot
+tile.FlowerPotMod.flowerpot_redshroombottom.desc=A planted colony of red mushrooms.
+tile.FlowerPotMod.flowerpot_redshroomtop.name=Red Shrouquet
+tile.FlowerPotMod.flowerpot_redshroomtop.desc=An odd bundle of red mushrooms.
+tile.FlowerPotMod.flowerpot_whiteshroombottom.name=White Shroompot
+tile.FlowerPotMod.flowerpot_whiteshroombottom.desc=A planted colony of white mushrooms.
+tile.FlowerPotMod.flowerpot_whiteshroomtop.name=White Shrouquet
+tile.FlowerPotMod.flowerpot_whiteshroomtop.desc=An odd bundle of white mushrooms.
 
 
 tile.FlowerPotMod.flowerpot_oakbottom.name=Oak Tree Pot
@@ -53,6 +130,10 @@ tile.FlowerPotMod.flowerpot_pinetop.name=Miniature Pine Tree
 tile.FlowerPotMod.flowerpot_pinetop.desc=A miniature pine tree.
 tile.FlowerPotMod.flowerpot_cherrytop.name=Miniature Cherry Tree
 tile.FlowerPotMod.flowerpot_cherrytop.desc=A miniature cherry tree.
+tile.FlowerPotMod.flowerpot_cherrytop_flowering.name=Miniature Flowering Cherry Tree
+tile.FlowerPotMod.flowerpot_cherrytop_flowering.desc=A miniature flowering cherry tree.
+tile.FlowerPotMod.flowerpot_cherrytop_fruiting.name=Miniature Fruiting Cherry Tree
+tile.FlowerPotMod.flowerpot_cherrytop_fruiting.desc=A fruiting miniature cherry tree.
 tile.FlowerPotMod.flowerpot_palmtop.name=Miniature Palm Tree
 tile.FlowerPotMod.flowerpot_palmtop.desc=A miniature palm tree.
 tile.FlowerPotMod.flowerpot_thorntop.name=Miniature Thorn Tree
@@ -65,5 +146,9 @@ tile.FlowerPotMod.flowerpot_mossytop.name=Miniature Mossy Tree
 tile.FlowerPotMod.flowerpot_mossytop.desc=A miniature oak tree, covered in moss.
 tile.FlowerPotMod.flowerpot_cocoatop.name=Miniature Cocoa Tree
 tile.FlowerPotMod.flowerpot_cocoatop.desc=A miniature cocoa tree.
+tile.FlowerPotMod.flowerpot_cocoatop_flowering.name=Miniature Flowering Cocoa Tree
+tile.FlowerPotMod.flowerpot_cocoatop_flowering.desc=A miniature flowering cocoa tree.
+tile.FlowerPotMod.flowerpot_cocoatop_fruiting.name=Miniature Fruiting Cocoa Tree
+tile.FlowerPotMod.flowerpot_cocoatop_fruiting.desc=A fruiting miniature cocoa tree.
 tile.FlowerPotMod.flowerpot_retrotop.name=Miniature Retro Tree
 tile.FlowerPotMod.flowerpot_retrotop.desc=A miniature oak tree, from a faraway land.

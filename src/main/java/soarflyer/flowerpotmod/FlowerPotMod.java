@@ -1,6 +1,7 @@
 package soarflyer.flowerpotmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.core.item.IBonemealable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import soarflyer.flowerpotmod.blocks.BlockInitializer;
@@ -38,29 +39,64 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static final int BlockID = 14120;
-	public static final int BlockIDMax = 31; // this is so tops can exist on different bottoms,
+	public static final int BlockIDMax = 59; // this is so tops can exist on different bottoms,
 	// and delete themselves if not on a block added by this mod
 
 	// Create bottom block, block ID set to BlockID + ID_[]
 	// Create top block, block ID set to BlockID + ID_[] + 1
 	// In blocks, use ID_[] + 1 to check surroundings
-	public static final int ID_Simple = 1;
-	public static final int ID_Varied = 3;
-	public static final int ID_Warm = 5;
-	public static final int ID_Cool = 7;
-	public static final int ID_Weed = 9;
 
-	public static final int ID_Oak = 11;
-	public static final int ID_Birch = 13;
-	public static final int ID_Pine = 15;
-	public static final int ID_Cherry = 17;
-	public static final int ID_Palm = 19;
-	public static final int ID_Thorn = 21;
-	public static final int ID_Eucalyptus= 23;
-	public static final int ID_Shrub = 25;
-	public static final int ID_Mossy = 27;
-	public static final int ID_Cocoa = 29;
-	public static final int ID_Retro = 31;
+	/// single flowers  - top + 1
+	public static final int ID_Rose = 1;
+	public static final int ID_Dandelion = 3;
+	public static final int ID_Marigold = 5;
+	public static final int ID_Bluebell = 7;
+	public static final int ID_Heather = 9;
+	public static final int ID_Orchid = 11;
+
+	public static final int ID_Glory = 13;
+	public static final int ID_Wintergreen = 15;
+	public static final int ID_Nightshade = 17;
+
+	public static final int ID_BrownShroom = 19;
+	public static final int ID_RedShroom = 21;
+	public static final int ID_WhiteShroom = 23;
+
+
+	/// flower arrangements - top + 1
+	public static final int ID_Simple = 25;
+	public static final int ID_Varied = 27;
+	public static final int ID_Warm = 29;
+	public static final int ID_Cool = 31;
+	public static final int ID_Weed = 33;
+
+	public static final int ID_Shroom = 35;
+
+
+	/// tree pots - top + 1
+	public static final int ID_Oak = 37;
+	public static final int ID_Birch = 39;
+	public static final int ID_Pine = 41;
+	public static final int ID_Palm = 43;
+	public static final int ID_Thorn = 45;
+	public static final int ID_Eucalyptus= 47;
+	public static final int ID_Shrub = 49;
+	public static final int ID_Mossy = 51;
+	public static final int ID_Retro = 53;
+
+
+	/// bonemealable - top + 3
+	public static final int ID_Cherry = 55;
+	public static final int ID_Cocoa = 59;
+// next 63
+
+	/// ground objects have their IDs go backwards from blockID
+	// these flowers don't exist in the world
+	public static final int ID_GloryFlower = 1;
+	public static final int ID_WintergreenFlower = 2;
+	public static final int ID_NightshadeFlower = 3;
+
+	public static final int ID_WhiteMushroom = 4;
 
 
     @Override

@@ -15,7 +15,6 @@ import static soarflyer.flowerpotmod.FlowerPotMod.*;
 public class Bottom_WarmFlowerPot extends Block {
 	public Bottom_WarmFlowerPot(String key, int id) {
 		super(key, id, Material.dirt);
-
 	}
 
 	/// Change this when making new blocks

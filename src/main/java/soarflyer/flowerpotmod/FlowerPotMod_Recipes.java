@@ -17,13 +17,33 @@ import static soarflyer.flowerpotmod.FlowerPotMod.*;
 public class FlowerPotMod_Recipes extends RecipeRegistry {
 	public static final RecipeNamespace FLOWERPOTMOD = new RecipeNamespace();
 
+	public static Block[] BaseFlowerPots = {
+		Block.getBlock(BlockID + ID_Rose),
+		Block.getBlock(BlockID + ID_Dandelion),
+		Block.getBlock(BlockID + ID_Marigold),
+		Block.getBlock(BlockID + ID_Bluebell),
+		Block.getBlock(BlockID + ID_Heather),
+		Block.getBlock(BlockID + ID_Orchid),
+
+		Block.getBlock(BlockID + ID_Glory),
+		Block.getBlock(BlockID + ID_Wintergreen),
+		Block.getBlock(BlockID + ID_Nightshade),
+
+		Block.getBlock(BlockID + ID_BrownShroom),
+		Block.getBlock(BlockID + ID_RedShroom),
+		Block.getBlock(BlockID + ID_WhiteShroom),
+	};
+
 	public static Block[] FlowerPots = {
 		Block.getBlock(BlockID + ID_Simple),
 		Block.getBlock(BlockID + ID_Varied),
 		Block.getBlock(BlockID + ID_Warm),
 		Block.getBlock(BlockID + ID_Cool),
 		Block.getBlock(BlockID + ID_Weed),
+
+		Block.getBlock(BlockID + ID_Shroom),
 	};
+
 	public static Block[] TreePots = {
 		Block.getBlock(BlockID + ID_Oak),
 		Block.getBlock(BlockID + ID_Birch),
@@ -35,12 +55,173 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		Block.getBlock(BlockID + ID_Shrub),
 		Block.getBlock(BlockID + ID_Mossy),
 		Block.getBlock(BlockID + ID_Cocoa),
-		Block.getBlock(BlockID + ID_Retro)
+		Block.getBlock(BlockID + ID_Retro),
 	};
+
+	public static Block[] Ground = {
+		Block.getBlock(BlockID - ID_GloryFlower),
+		Block.getBlock(BlockID - ID_WintergreenFlower),
+		Block.getBlock(BlockID - ID_NightshadeFlower),
+		Block.getBlock(BlockID - ID_WhiteMushroom),
+	};
+
+	public static void InitRecipes() {
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', Block.flowerRed) // Example of another input item
+
+			.create("FlowerPot_Rose", new ItemStack(BaseFlowerPots[0], 1)); // Replace with your output item/block
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', Block.flowerYellow) // Example of another input item
+
+			.create("FlowerPot_Dandelion", new ItemStack(BaseFlowerPots[1], 1)); // Replace with your output item/block
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', Block.flowerOrange) // Example of another input item
+
+			.create("FlowerPot_Marigold", new ItemStack(BaseFlowerPots[2], 1)); // Replace with your output item/block
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', Block.flowerLightBlue) // Example of another input item
+
+			.create("FlowerPot_Bluebell", new ItemStack(BaseFlowerPots[3], 1)); // Replace with your output item/block
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', Block.flowerPurple) // Example of another input item
+
+			.create("FlowerPot_Heather", new ItemStack(BaseFlowerPots[4], 1)); // Replace with your output item/block
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', Block.flowerPink) // Example of another input item
+
+			.create("FlowerPot_Orchid", new ItemStack(BaseFlowerPots[5], 1)); // Replace with your output item/block
+
+
+		// fictional flowers replaced with proxies
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', new ItemStack(Ground[0], 1)) // Example of another input item
+
+			.create("FlowerPot_Glory", new ItemStack(BaseFlowerPots[6], 1)); // Replace with your output item/block
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', new ItemStack(Ground[1], 1)) // Example of another input item
+
+			.create("FlowerPot_Wintergreen", new ItemStack(BaseFlowerPots[7], 1)); // Replace with your output item/block
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', new ItemStack(Ground[2], 1)) // Example of another input item
+
+			.create("FlowerPot_Nightshade", new ItemStack(BaseFlowerPots[8], 1)); // Replace with your output item/block
+
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', Block.mushroomBrown)
+
+			.create("FlowerPot_BrownShroom", new ItemStack(BaseFlowerPots[9], 1)); // Replace with your output item/block
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', Block.mushroomRed) // Example of another input item
+
+			.create("FlowerPot_RedShroom", new ItemStack(BaseFlowerPots[10], 1)); // Replace with your output item/block
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"fff",
+				"fff",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('f', new ItemStack(Ground[3], 1)) // Example of another input item
+
+			.create("FlowerPot_WhiteShroom", new ItemStack(BaseFlowerPots[11], 1)); // Replace with your output item/block
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public static void InitRecipes() {
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
 				"   ",
@@ -89,11 +270,13 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
 				"   ",
-				"hhh",
+				"wpc",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
 			.addInput('b', Item.brickClay) // Example of another input item
-			.addInput('h', Block.flowerPurple) // Example of another input item
+			.addInput('p', Block.flowerPurple) // Example of another input item
+			.addInput('w', new ItemStack(Ground[1], 1)) // Example of another input item
+			.addInput('c', new ItemStack(Ground[0], 1)) // Example of another input item
 
 			.create("FlowerPot_Cool", new ItemStack(FlowerPots[3], 1)); // Replace with your output item/block
 
@@ -101,16 +284,33 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
 				"   ",
-				"yly",
+				"nly",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
 			.addInput('b', Item.brickClay) // Example of another input item
-			.addInput('y', Block.flowerYellow) // Example of another input item
 			.addInput('l', Block.flowerLightBlue) // Example of another input item
+			.addInput('n', new ItemStack(Ground[2], 1)) // Example of another input item
+			.addInput('y', Block.flowerYellow) // Example of another input item
 
 			.create("FlowerPot_Weed", new ItemStack(FlowerPots[4], 1)); // Replace with your output item/block
 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"   ",
+				"orw",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('o', Block.mushroomBrown) // Example of another input item
+			.addInput('r', Block.mushroomRed) // Example of another input item
+			.addInput('w', new ItemStack(Ground[3], 1)) // Example of another input item
+
+			.create("FlowerPot_Shroom", new ItemStack(FlowerPots[5], 1)); // Replace with your output item/block
+
+			//.addInput(Block.mushroomBrown) // Replace with your input item/block
+			//.addInput(Block.mushroomRed) // Example of another input item
 
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -207,13 +407,12 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"lll",
-				"sss",
+				"   ",
+				" s ",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
 			.addInput('b', Item.brickClay) // Example of another input item
-			.addInput('l', Block.leavesOak) // Example of another input item
-			.addInput('s', Item.stick) // Example of another input item
+			.addInput('s', Block.saplingShrub) // Example of another input item
 
 			.create("FlowerPot_Shrub", new ItemStack(TreePots[7], 1)); // Replace with your output item/block
 
@@ -241,6 +440,60 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 			.addInput('s', Block.saplingCacao) // Example of another input item
 
 			.create("FlowerPot_Cocoa", new ItemStack(TreePots[9], 1)); // Replace with your output item/block
+
+
+
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shapeless("MOD_ID")
+			.addInput(Block.flowerLightBlue) // Replace with your input item/block
+			.addInput(Block.flowerYellow) // Example of another input item
+
+			.create("FlowerPot_GloryFlower", new ItemStack(Ground[0], 1)); // Replace with your output item/block
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shapeless("MOD_ID")
+			.addInput(Block.flowerPink) // Replace with your input item/block
+			.addInput(Block.flowerYellow) // Example of another input item
+
+			.create("FlowerPot_WintergreenFlower", new ItemStack(Ground[1], 1)); // Replace with your output item/block
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shapeless("MOD_ID")
+			.addInput(Block.flowerPurple) // Replace with your input item/block
+			.addInput(Block.flowerYellow) // Example of another input item
+
+			.create("FlowerPot_NightshadeFlower", new ItemStack(Ground[2], 1)); // Replace with your output item/block
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shapeless("MOD_ID")
+			.addInput(new ItemStack(Ground[0], 1)) // Replace with your input item/block
+
+			.create("FlowerPot_GloryCyan", new ItemStack(Item.dye, 2, 6)); // Replace with your output item/block
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shapeless("MOD_ID")
+			.addInput(new ItemStack(Ground[1], 1)) // Replace with your input item/block
+
+			.create("FlowerPot_WintergreenLime", new ItemStack(Item.dye, 2, 10)); // Replace with your output item/block
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shapeless("MOD_ID")
+			.addInput(new ItemStack(Ground[2], 1)) // Replace with your input item/block
+
+			.create("FlowerPot_NightshadeMagenta", new ItemStack(Item.dye, 2, 13)); // Replace with your output item/block
+
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shapeless("MOD_ID")
+			.addInput(Block.mushroomBrown) // Replace with your input item/block
+			.addInput(Block.mushroomRed) // Example of another input item
+
+			.create("FlowerPot_WhiteMushroom", new ItemStack(Ground[3], 1)); // Replace with your output item/block
 
 	}
 
