@@ -144,9 +144,9 @@ public class BlockInitializer {
 			.setHardness(0.5F)
 			.setResistance(0.5F)
 			.setTicking(true)
-			.setTopTexture("flowerpotmod:block/Top_TreePot")
-			.setSideTextures("flowerpotmod:block/Side_TreePot")
-			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTopTexture("flowerpotmod:block/Top_FruitingTreePot")
+			.setSideTextures("flowerpotmod:block/Side_FruitingTreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_FruitingTreePot")
 			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
 
 		custom_block = new Bottom_CherryTreePot("flowerpot_cherrybottom", BlockID + ID_Cherry);
@@ -228,9 +228,9 @@ public class BlockInitializer {
 			.setBlockSound(BlockSounds.STONE)
 			.setHardness(0.5F)
 			.setResistance(0.5F)
-			.setTopTexture("flowerpotmod:block/Top_TreePot")
-			.setSideTextures("flowerpotmod:block/Side_TreePot")
-			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTopTexture("flowerpotmod:block/Top_FruitingTreePot")
+			.setSideTextures("flowerpotmod:block/Side_FruitingTreePot")
+			.setBottomTexture("flowerpotmod:block/Bottom_FruitingTreePot")
 			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
 
 		custom_block = new Bottom_CocoaTreePot("flowerpot_cocoabottom", BlockID + ID_Cocoa);
@@ -424,9 +424,9 @@ public class BlockInitializer {
 			.setBlockSound(BlockSounds.STONE)
 			.setHardness(0.5F)
 			.setResistance(0.5F)
-			.setTopTexture("flowerpotmod:block/Top_FungusPot")
-			.setSideTextures("flowerpotmod:block/Side_FungusPot")
-			.setBottomTexture("flowerpotmod:block/Bottom_FungusPot")
+			.setTopTexture("flowerpotmod:block/Top_ShroomPot")
+			.setSideTextures("flowerpotmod:block/Side_ShroomPot")
+			.setBottomTexture("flowerpotmod:block/Bottom_ShroomPot")
 			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
 
 		custom_block = new Bottom_ShroomPot("flowerpot_shroombottom", BlockID + ID_Shroom);
