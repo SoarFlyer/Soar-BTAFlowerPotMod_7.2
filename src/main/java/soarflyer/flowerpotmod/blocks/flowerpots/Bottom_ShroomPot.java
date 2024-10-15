@@ -4,6 +4,7 @@ import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.entity.EntityLiving;
 import net.minecraft.core.entity.player.EntityPlayer;
+import net.minecraft.core.enums.LightLayer;
 import net.minecraft.core.item.IBonemealable;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemDye;
@@ -34,9 +35,22 @@ public class Bottom_ShroomPot extends Block implements IBonemealable {
 	int ChangeTopID_Fruit = BlockID + ID_Shroom + 3;
 
 	// for growing
-	int RandyBig = 20000;
+	int RandyBig = 22500;
 	float RandyInc = 0.01f;
 	float RandyComp = RandyBig;
+
+	/// base settings for reference, 100 of each pot, growing for 70 minutes
+	// tick rate 100 for all
+	// cherry randybig = 15000 / 1or2 drops
+	// cocoa randybig = 17500 / 1 drop
+	// shroom randybig = 20000 / 1or2or3 red/brown or 1or2 white
+	/// after 70 minutes
+	// 84 cherries
+	// 41 cocoa
+	// 66 shrooms 21R/27B/18W
+	// harvested again 10 minutes later and got ~1/6ish+- the drops
+	/// considering that you need a tree farm to even make that many pots, I think that's an ok return
+	/// mushrooms may be high tho
 
 
 	@Override
@@ -113,7 +127,7 @@ public class Bottom_ShroomPot extends Block implements IBonemealable {
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
-		if (MyID == ChangeID && UpID == ChangeTopID_Flower) {
+		if ((MyID == ChangeID && UpID == ChangeTopID_Flower) && ((world.getSavedLightValue(LightLayer.Block,x,y+1,z) <= 10) && (((world.getSavedLightValue(LightLayer.Sky,x,y+1,z) - world.skyDarken) <= 10) || (!world.canBlockSeeTheSky(x,y+1,z))))){ // jesus christ
 			if ((rand.nextInt(RandyBig) > RandyComp)){
 				RandyComp = RandyBig;
 				world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Fruit, world.getBlockMetadata(x, y, z));

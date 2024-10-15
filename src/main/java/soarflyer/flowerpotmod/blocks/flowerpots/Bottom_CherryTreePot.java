@@ -7,6 +7,7 @@ import net.minecraft.core.block.entity.TileEntity;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.entity.EntityLiving;
 import net.minecraft.core.entity.player.EntityPlayer;
+import net.minecraft.core.enums.LightLayer;
 import net.minecraft.core.item.IBonemealable;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemDye;
@@ -38,7 +39,7 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 
 
 	// for growing
-	int RandyBig = 15000;
+	int RandyBig = 17500;
 	float RandyInc = 0.01f;
 	float RandyComp = RandyBig;
 
@@ -126,7 +127,7 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
-		if (MyID == ChangeID && UpID == ChangeTopID_Flower) {
+		if ((MyID == ChangeID && UpID == ChangeTopID_Flower) && ((world.getSavedLightValue(LightLayer.Block,x,y+1,z) >= 5) || (((world.getSavedLightValue(LightLayer.Sky,x,y+1,z) - world.skyDarken) >= 5) && (world.canBlockSeeTheSky(x,y+1,z))))){ // jesus christ
 			if ((rand.nextInt(RandyBig) > RandyComp)){
 				RandyComp = RandyBig;
 				world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Fruit, world.getBlockMetadata(x, y, z));
