@@ -1,11 +1,15 @@
 package soarflyer.flowerpotmod.blocks.flowerpots;
 
+import net.minecraft.core.NextTickListEntry;
 import net.minecraft.core.block.Block;
+import net.minecraft.core.block.BlockTileEntity;
+import net.minecraft.core.block.entity.TileEntity;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.entity.EntityLiving;
 import net.minecraft.core.entity.player.EntityPlayer;
 import net.minecraft.core.item.IBonemealable;
 import net.minecraft.core.item.Item;
+import net.minecraft.core.item.ItemDye;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.sound.SoundCategory;
 import net.minecraft.core.util.helper.Side;
@@ -22,6 +26,7 @@ import static soarflyer.flowerpotmod.FlowerPotMod.*;
 public class Bottom_CherryTreePot extends Block implements IBonemealable {
 	public Bottom_CherryTreePot(String key, int id) {
 		super(key, id, Material.dirt);
+		super.setTicking(true);
 	}
 
 	/// Change this when making new blocks
@@ -30,6 +35,28 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 
 	int ChangeTopID_Flower = BlockID + ID_Cherry + 2;
 	int ChangeTopID_Fruit = BlockID + ID_Cherry + 3;
+
+
+	// for growing
+	int RandyBig = 15000;
+	float RandyInc = 0.01f;
+	float RandyComp = RandyBig;
+
+	/// base settings for reference, 100 of each pot, growing for 70 minutes
+	// tick rate 100 for all
+	// cherry randybig = 15000 / 1or2 drops
+	// cocoa randybig = 17500 / 1 drop
+	// shroom randybig = 20000 / 1or2or3 red/brown or 1or2 white
+	/// after 70 minutes
+	// 84 cherries
+	// 41 cocoa
+	// 66 shrooms 21R/27B/18W
+	// harvested again 10 minutes later and got ~1/6ish+- the drops
+	/// considering that you need a tree farm to even make that many pots, I think that's an ok return
+	/// mushrooms may be high tho
+
+
+
 
 	@Override
 	public void onBlockPlaced(World world, int x, int y, int z, Side side, EntityLiving entity, double sideHeight) {
@@ -54,13 +81,14 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 	}
 
 
+
 	@Override
 	public boolean onBlockRightClicked(World world, int x, int y, int z, EntityPlayer player, Side side, double xHit, double yHit) {
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeID && UpID == ChangeTopID_Fruit) {
-			world.dropItem(x, y, z, new ItemStack(Item.foodCherry,1)); // thanks luke /^.^ \  <-- evil face
+			world.dropItem(x, y, z, new ItemStack(Item.foodCherry, world.rand.nextInt(2) + 1)); // thanks luke /^.^ \  <-- evil face
 			world.playSoundEffect(player, SoundCategory.WORLD_SOUNDS, (double)x + 0.5, (double)y + 0.5, (double)z + 0.5, "random.pop", 0.3F, 1.0f);
 			world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Flower, world.getBlockMetadata(x, y, z));
 			player.swingItem();
@@ -77,27 +105,39 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 		int DownID = world.getBlockId(i, j - 1, k);
 		if (MyID == ChangeID && UpID == ChangeTopID) {
 			world.setBlockAndMetadataWithNotify(i, j + 1, k, ChangeTopID_Flower, world.getBlockMetadata(i, j, k));
+			if (entityPlayer.getGamemode().consumeBlocks()) {
+				--itemStack.stackSize;
+			}
 			return true;
 		}else {
-				return false;
-			}
+			return false;
+		}
 
 	}
 
-	public void randomDisplayTick(World world, int x, int y, int z, Random rand) {
-		super.updateTick(world, x, y, z, rand);
+	@Override
+	public int tickRate() {
+			return 100;
+	}
+
+	@Override // idk how this shit works dude i just typed out a screenshot useless posted
+	public void updateTick(World world, int x, int y, int z, Random rand) {
+		boolean flag = world.scheduledUpdatesAreImmediate;
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeID && UpID == ChangeTopID_Flower) {
-			float TickR = 1f; //grow speed/chance per tick
-			if (rand.nextInt((int) (1000.0F / TickR)) == 0) {
+			if ((rand.nextInt(RandyBig) > RandyComp)){
+				RandyComp = RandyBig;
 				world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Fruit, world.getBlockMetadata(x, y, z));
+			} else {
+				RandyComp -= RandyInc;
 			}
-
 		}
+		world.scheduleBlockUpdate(x,y,z,this.id,this.tickRate());
+		world.scheduledUpdatesAreImmediate = flag; // why set x to y and then y to x ???
+		// wtf is a flag???????
 	}
-
 
 	@Override
 	// Determines if the block pushes you out and can suffocate you

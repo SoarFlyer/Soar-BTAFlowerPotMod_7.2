@@ -5,8 +5,11 @@ import net.minecraft.core.item.IBonemealable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import soarflyer.flowerpotmod.blocks.BlockInitializer;
+import turniplabs.halplibe.util.ConfigHandler;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
+
+import java.util.Properties;
 
 /// ------------------------------------------------------
 // To create a new flower pot
@@ -15,6 +18,7 @@ import turniplabs.halplibe.util.RecipeEntrypoint;
 // it should be offset from the last one by 2
 // 1, 3, 5, 7, 9, etc
 // this is because top blocks will generate their own ID by adding 1
+// (bonemealable ones add 3)
 //
 // Now create a Top_[name] and Bottom_[name] java files in /blocks/flowerpots
 // copy the entirety of a previous Top_ and Bottom_ file
@@ -29,17 +33,23 @@ import turniplabs.halplibe.util.RecipeEntrypoint;
 // Finally, go to FlowerPotMod_Recipes
 // place your new ID_[name] in the flowerpots array
 // copy a recipe builder, and set it to output the id by its array number
-// define the shape of the recipe should be fairly straightforward
+// defining the shape of the recipe should be fairly straightforward
 //
 // And don't forget to name it in en_US.lang!
+//
+// idk how to make a readable config file so i'll put thanks here
+// thanks cloud54 for the nice mushroom textures i asked permission to use
+// thanks luke and useless for the code that i stole without asking
 /// ------------------------------------------------------
 
 public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
     public static final String MOD_ID = "FlowerPotMod";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+
+	/// as of now(now), blockid spans 14116 - 14183
 	public static final int BlockID = 14120;
-	public static final int BlockIDMax = 59; // this is so tops can exist on different bottoms,
+	public static final int BlockIDMax = 63; // this is so tops can exist on different bottoms,
 	// and delete themselves if not on a block added by this mod
 
 	// Create bottom block, block ID set to BlockID + ID_[]
@@ -70,7 +80,7 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
 	public static final int ID_Cool = 31;
 	public static final int ID_Weed = 33;
 
-	public static final int ID_Shroom = 35;
+// 35
 
 
 	/// tree pots - top + 1
@@ -88,7 +98,8 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
 	/// bonemealable - top + 3
 	public static final int ID_Cherry = 55;
 	public static final int ID_Cocoa = 59;
-// next 63
+	public static final int ID_Shroom = 63;
+// next 67
 
 	/// ground objects have their IDs go backwards from blockID
 	// these flowers don't exist in the world

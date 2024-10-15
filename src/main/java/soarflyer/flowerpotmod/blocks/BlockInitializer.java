@@ -2,12 +2,14 @@ package soarflyer.flowerpotmod.blocks;
 
 import net.minecraft.client.render.block.model.BlockModelCrossedSquares;
 import net.minecraft.core.block.Block;
+import net.minecraft.core.block.entity.TileEntity;
 import net.minecraft.core.block.tag.BlockTags;
 import net.minecraft.core.sound.BlockSounds;
 import soarflyer.flowerpotmod.blocks.flowerpots.*;
 import soarflyer.flowerpotmod.blocks.models.Model_BottomFlowerPot;
 import soarflyer.flowerpotmod.blocks.models.Model_TopFlowerPot;
 import turniplabs.halplibe.helper.BlockBuilder;
+import turniplabs.halplibe.helper.EntityHelper;
 
 import static soarflyer.flowerpotmod.FlowerPotMod.*;
 
@@ -966,6 +968,38 @@ public class BlockInitializer {
 		custom_block = new Top_ShroomPot("flowerpot_shroomtop", BlockID + ID_Shroom + 1);
 		custom_top_builder29.build(custom_block);
 
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder29b = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_ShroomPot_Flowering")
+			.setEastTexture("flowerpotmod:block/Arrangement_ShroomPot_Flowering")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_ShroomPot_Flowering")
+			.setWestTexture("flowerpotmod:block/ArrangementF_ShroomPot_Flowering")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_ShroomPot_Flowering("flowerpot_shroomtop_flowering", BlockID + ID_Shroom + 2);
+		custom_top_builder29b.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder29c = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_ShroomPot_Fruiting")
+			.setEastTexture("flowerpotmod:block/Arrangement_ShroomPot_Fruiting")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_ShroomPot_Fruiting")
+			.setWestTexture("flowerpotmod:block/ArrangementF_ShroomPot_Fruiting")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_ShroomPot_Fruiting("flowerpot_shroomtop_fruiting", BlockID + ID_Shroom + 3);
+		custom_top_builder29c.build(custom_block);
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		///// GROUND
@@ -1022,5 +1056,7 @@ public class BlockInitializer {
 
 		custom_block = new Ground_WhiteMushroom("flowerpot_whitemushroom", BlockID - ID_WhiteMushroom);
 		custom_ground_builder4.build(custom_block);
+
+		// next time i swear ill use metadata or something instead of this
 	}
 }

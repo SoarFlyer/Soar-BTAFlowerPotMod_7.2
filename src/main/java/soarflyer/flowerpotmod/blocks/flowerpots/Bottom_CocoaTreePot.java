@@ -23,6 +23,7 @@ import static soarflyer.flowerpotmod.FlowerPotMod.*;
 public class Bottom_CocoaTreePot extends Block implements IBonemealable {
 	public Bottom_CocoaTreePot(String key, int id) {
 		super(key, id, Material.dirt);
+		super.setTicking(true);
 	}
 
 	/// Change this when making new blocks
@@ -31,6 +32,12 @@ public class Bottom_CocoaTreePot extends Block implements IBonemealable {
 
 	int ChangeTopID_Flower = BlockID + ID_Cocoa + 2;
 	int ChangeTopID_Fruit = BlockID + ID_Cocoa + 3;
+
+	// for growing
+	int RandyBig = 17500;
+	float RandyInc = 0.01f;
+	float RandyComp = RandyBig;
+
 
 	@Override
 	public void onBlockPlaced(World world, int x, int y, int z, Side side, EntityLiving entity, double sideHeight) {
@@ -78,6 +85,9 @@ public class Bottom_CocoaTreePot extends Block implements IBonemealable {
 		int DownID = world.getBlockId(i, j - 1, k);
 		if (MyID == ChangeID && UpID == ChangeTopID) {
 			world.setBlockAndMetadataWithNotify(i, j + 1, k, ChangeTopID_Flower, world.getBlockMetadata(i, j, k));
+			if (entityPlayer.getGamemode().consumeBlocks()) {
+				--itemStack.stackSize;
+			}
 			return true;
 		}else {
 			return false;
@@ -85,20 +95,29 @@ public class Bottom_CocoaTreePot extends Block implements IBonemealable {
 
 	}
 
-	public void randomDisplayTick(World world, int x, int y, int z, Random rand) {
-		super.updateTick(world, x, y, z, rand);
+	@Override
+	public int tickRate() {
+		return 100;
+	}
+
+	@Override // idk how this shit works dude i just typed out a screenshot useless posted
+	public void updateTick(World world, int x, int y, int z, Random rand) {
+		boolean flag = world.scheduledUpdatesAreImmediate;
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeID && UpID == ChangeTopID_Flower) {
-			float TickR = 0.5f; //grow speed/chance per tick
-			if (rand.nextInt((int) (1000.0F / TickR)) == 0) {
+			if ((rand.nextInt(RandyBig) > RandyComp)){
+				RandyComp = RandyBig;
 				world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Fruit, world.getBlockMetadata(x, y, z));
+			} else {
+				RandyComp -= RandyInc;
 			}
-
 		}
+		world.scheduleBlockUpdate(x,y,z,this.id,this.tickRate());
+		world.scheduledUpdatesAreImmediate = flag; // why set x to y and then y to x ???
+		// wtf is a flag???????
 	}
-
 
 	@Override
 	// Determines if the block pushes you out and can suffocate you

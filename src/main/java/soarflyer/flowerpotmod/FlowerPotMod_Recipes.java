@@ -309,8 +309,6 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 
 			.create("FlowerPot_Shroom", new ItemStack(FlowerPots[5], 1)); // Replace with your output item/block
 
-			//.addInput(Block.mushroomBrown) // Replace with your input item/block
-			//.addInput(Block.mushroomRed) // Example of another input item
 
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -517,7 +515,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 			);
 
 		// Add the recipe group - id: yourGroupId
-		//PARAGLIDER.register("workbench", WORKBENCH);
+		//PARAGLIDER.register("workbench", WORKBENCH); // what does this even do? oh well
 
 
 		// If you have furnace recipes

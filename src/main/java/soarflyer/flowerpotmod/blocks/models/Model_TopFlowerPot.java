@@ -53,6 +53,8 @@ public class Model_TopFlowerPot<T extends Block> extends BlockModelStandard<T> {
 		this.renderBlocks.enableAO = false;
 		flag |= this.renderStandardBlock(tessellator, this.block, x, y, z);
 
+		renderBlocks.enableAO = false; //PLEADEFDS
+
 		this.block.setBlockBoundsBasedOnState(BlockModelStandard.renderBlocks.blockAccess, x, y, z);
 		return flag;
 	}
