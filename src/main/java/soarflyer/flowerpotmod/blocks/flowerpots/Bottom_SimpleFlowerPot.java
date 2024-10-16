@@ -5,6 +5,7 @@ import net.minecraft.core.block.material.Material;
 import net.minecraft.core.entity.EntityLiving;
 import net.minecraft.core.entity.player.EntityPlayer;
 import net.minecraft.core.item.Item;
+import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.util.helper.Side;
 import net.minecraft.core.util.phys.AABB;
 import net.minecraft.core.world.World;
@@ -12,8 +13,7 @@ import net.minecraft.core.world.WorldSource;
 
 import java.util.ArrayList;
 
-import static soarflyer.flowerpotmod.FlowerPotMod.BlockID;
-import static soarflyer.flowerpotmod.FlowerPotMod.ID_Simple;
+import static soarflyer.flowerpotmod.FlowerPotMod.*;
 
 public class Bottom_SimpleFlowerPot extends Block {
 	public Bottom_SimpleFlowerPot(String key, int id) {
@@ -46,6 +46,23 @@ public class Bottom_SimpleFlowerPot extends Block {
 		if (MyID == ChangeID && UpID == ChangeTopID) {
 			world.setBlockAndMetadata(x, y + 1, z, 0, world.getBlockMetadata(x, y, z));
 		}
+	}
+
+	@Override
+	public boolean onBlockRightClicked(World world, int x, int y, int z, EntityPlayer player, Side side, double xHit, double yHit) {
+		int UpID = world.getBlockId(x, y + 1, z);
+		if (player.getHeldItem() != null){
+			if ((player.getHeldItem().getItem() == Item.toolShears) || (player.getHeldItem().getItem() == Item.toolShearsSteel)){
+				if ((UpID >= BlockID) && (UpID <= BlockID + BlockIDMax)) {
+					world.setBlockAndMetadataWithNotify(x, y + 1, z, 0, world.getBlockMetadata(x, y, z));
+					world.dropItem(x, y, z, new ItemStack(Block.getBlock(UpID), 1));
+					// this is a bit janky
+					// but now you can mix and match pots!!!!!
+					// :)
+				}
+			}
+		}
+		return super.onBlockRightClicked(world, x, y, z, player, side, xHit, yHit);
 	}
 
 

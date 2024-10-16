@@ -94,10 +94,23 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 			world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Flower, world.getBlockMetadata(x, y, z));
 			player.swingItem();
 			return true;
-		}else {
-			return false;
+		}else if (player.getHeldItem() != null) { // this NEEDS to be its own if, or the game always crashes | cannot check for null and !null
+			if ((player.getHeldItem().getItem() == Item.toolShears) || (player.getHeldItem().getItem() == Item.toolShearsSteel)) {
+				if (((UpID >= BlockID) && (UpID <= BlockID + BlockIDMax) && ((UpID != ChangeTopID_Flower) && UpID != ChangeTopID_Fruit))) {
+					world.setBlockAndMetadataWithNotify(x, y + 1, z, 0, world.getBlockMetadata(x, y, z));
+					world.dropItem(x, y, z, new ItemStack(Block.getBlock(UpID), 1));
+					// this is a bit janky
+					// but now you can mix and match pots!!!!!
+					// :)
+				}
+			} else if ((UpID == ChangeTopID_Flower) && (player.getHeldItem().getItem() == Item.foodAppleGold)) {
+				if (player.getGamemode().isPlayerInvulnerable()) {
+					world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Fruit, world.getBlockMetadata(x, y, z));
+				}
+				// nested ifs look better than a long ass line I gotta horizontally scroll through
+			}
 		}
-
+		return super.onBlockRightClicked(world, x, y, z, player, side, xHit, yHit);
 	}
 
 	public boolean onBonemealUsed(ItemStack itemStack, EntityPlayer entityPlayer, World world, int i, int j, int k, Side side, double d, double e) {

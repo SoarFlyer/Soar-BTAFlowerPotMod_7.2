@@ -3,6 +3,7 @@ package soarflyer.flowerpotmod.blocks.flowerpots;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.entity.EntityLiving;
+import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.util.helper.Side;
 import net.minecraft.core.util.phys.AABB;
 import net.minecraft.core.world.World;
@@ -32,6 +33,21 @@ public class Top_ShroomPot_Fruiting extends Block {
 		if (MyID == ChangeTopID && DownID == 0) {
 			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
 		}
+	}
+
+	public void onBlockPlaced(World world, int x, int y, int z, Side side, EntityLiving entity, double sideHeight) {
+		int MyID = world.getBlockId(x, y, z);
+		int UpID = world.getBlockId(x, y + 1, z);
+		int DownID = world.getBlockId(x, y - 1, z);
+		if (MyID == ChangeTopID && DownID < BlockID) {
+			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
+			world.dropItem(x, y, z, new ItemStack(Block.getBlock(ChangeTopID), 1));
+		}
+		if (MyID == ChangeTopID && DownID > BlockID + BlockIDMax) {
+			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
+			world.dropItem(x, y, z, new ItemStack(Block.getBlock(ChangeTopID), 1));
+		}
+
 	}
 
 	@Override

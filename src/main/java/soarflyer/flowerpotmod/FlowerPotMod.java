@@ -47,14 +47,16 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 
-	/// as of now(now), blockid spans 14116 - 14183
-	public static final int BlockID = 14120;
-	public static final int BlockIDMax = 63; // this is so tops can exist on different bottoms,
+	/// as of now(now), blockid spans 14116 - 14184
+	public static final int BlockID = 14120; // goes negative, see ground objects
+	public static final int BlockIDMax = 64; // ---> add 1 to highest number <---
+	// this is so tops can exist on different bottoms,
 	// and delete themselves if not on a block added by this mod
 
 	// Create bottom block, block ID set to BlockID + ID_[]
 	// Create top block, block ID set to BlockID + ID_[] + 1
 	// In blocks, use ID_[] + 1 to check surroundings
+	// Bonemealables use ID_[] + 1, + 2, + 3
 
 	/// single flowers  - top + 1
 	public static final int ID_Rose = 1;
