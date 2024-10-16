@@ -44,9 +44,9 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 
-	/// as of now(now), blockid spans 14116 - 14184
+	/// as of now(now), blockid spans 14116 - 14227
 	public static final int BlockID = 14120; // goes negative, see ground objects
-	public static final int BlockIDMax = 64; // ---> add 1 to highest number <---
+	public static final int BlockIDMax = 107; // ---> add 1 to highest number <---
 	// this is so tops can exist on different bottoms,
 	// and delete themselves if not on a block added by this mod
 
@@ -56,49 +56,82 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
 	// Bonemealables use ID_[] + 1, + 2, + 3
 
 	/// single flowers  - top + 1
-	public static final int ID_Rose = 1;
-	public static final int ID_Dandelion = 3;
-	public static final int ID_Marigold = 5;
-	public static final int ID_Bluebell = 7;
-	public static final int ID_Heather = 9;
-	public static final int ID_Orchid = 11;
+	public static final int ID_Empty = 0; // may use this for a dyable pot
+	//public static final int ID_Special = 1; // just in case
 
-	public static final int ID_Glory = 13;
-	public static final int ID_Wintergreen = 15;
-	public static final int ID_Nightshade = 17;
+	public static final int ID_Rose = 2;
+	public static final int ID_Dandelion = 4;
+	public static final int ID_Marigold = 6;
+	public static final int ID_Bluebell = 8;
+	public static final int ID_Heather = 10;
+	public static final int ID_Orchid = 12;
 
-	public static final int ID_BrownShroom = 19;
-	public static final int ID_RedShroom = 21;
-	public static final int ID_WhiteShroom = 23;
+	public static final int ID_Glory = 14;
+	public static final int ID_Wintergreen = 16;
+	public static final int ID_Nightshade = 18;
+
+	public static final int ID_BrownShroom = 20;
+	public static final int ID_RedShroom = 22;
+	public static final int ID_WhiteShroom = 24;
+
+	// Reserved - 26
+	// Reserved - 28
+	// Reserved - 30
 
 
 	/// flower arrangements - top + 1
-	public static final int ID_Simple = 25;
-	public static final int ID_Varied = 27;
-	public static final int ID_Warm = 29;
-	public static final int ID_Cool = 31;
-	public static final int ID_Weed = 33;
+	public static final int ID_Simple = 32;
+	public static final int ID_Varied = 34;
+	public static final int ID_Warm = 36;
+	public static final int ID_Cool = 38;
+	public static final int ID_Weed = 40;
 
-// 35
+	// Reserved - 42
+	// Reserved - 44
+	// Reserved - 46
+	// Reserved - 48
+	// Reserved - 50
+	// Reserved - 52
 
 
 	/// tree pots - top + 1
-	public static final int ID_Oak = 37;
-	public static final int ID_Birch = 39;
-	public static final int ID_Pine = 41;
-	public static final int ID_Palm = 43;
-	public static final int ID_Thorn = 45;
-	public static final int ID_Eucalyptus= 47;
-	public static final int ID_Shrub = 49;
-	public static final int ID_Mossy = 51;
-	public static final int ID_Retro = 53;
+	public static final int ID_Oak = 54;
+	public static final int ID_Birch = 56;
+	public static final int ID_Pine = 58;
+	public static final int ID_Palm = 60;
+	public static final int ID_Thorn = 62;
+	public static final int ID_Eucalyptus= 64;
+	public static final int ID_Shrub = 66;
+	public static final int ID_Mossy = 68;
+	public static final int ID_Retro = 70;
+
+	// Reserved - 72
+	// Reserved - 74
+	// Reserved - 76
+
+
+	/// plant pots - top + 1
+	public static final int ID_Dead = 78;
+	public static final int ID_Sugarcane = 80;
+
+	// Reserved - 82
+	// Reserved - 84
+	// Reserved - 86
+	// Reserved - 88
+	// Reserved - 90
+	// Reserved - 92
+	// Reserved - 94
 
 
 	/// bonemealable - top + 3
-	public static final int ID_Cherry = 55;
-	public static final int ID_Cocoa = 59;
-	public static final int ID_Shroom = 63;
-// next 67
+	public static final int ID_Cherry = 96;
+	public static final int ID_Cocoa = 100;
+	public static final int ID_Shroom = 104;
+
+	// Reserved - 108
+	// Reserved - 112
+	// Reserved - 116
+
 
 	/// ground objects have their IDs go backwards from blockID
 	// these flowers don't exist in the world
@@ -107,6 +140,12 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
 	public static final int ID_NightshadeFlower = 3;
 
 	public static final int ID_WhiteMushroom = 4;
+
+	/// later additions
+	/// Next - 120
+	// am i insane for doing it like this?
+	// i feel like this can't be ideal
+	// oh well :)
 
 
     @Override

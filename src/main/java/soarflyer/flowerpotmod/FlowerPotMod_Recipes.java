@@ -58,6 +58,14 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		Block.getBlock(BlockID + ID_Retro),
 	};
 
+	public static Block[] Plants = {
+		Block.getBlock(BlockID + ID_Dead),
+		Block.getBlock(BlockID + ID_Sugarcane),
+
+		Block.getBlock(BlockID + ID_Empty),
+	};
+
+	/////////////////////////////////////////////////////////////////
 	public static Block[] Ground = {
 		Block.getBlock(BlockID - ID_GloryFlower),
 		Block.getBlock(BlockID - ID_WintergreenFlower),
@@ -438,6 +446,56 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 			.addInput('s', Block.saplingCacao) // Example of another input item
 
 			.create("FlowerPot_Cocoa", new ItemStack(TreePots[9], 1)); // Replace with your output item/block
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"   ",
+				" s ",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('s', Item.foodAppleGold) // Example of another input item
+
+			.create("FlowerPot_Retro", new ItemStack(TreePots[10], 1)); // Replace with your output item/block
+
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"   ",
+				"ppp",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('p', Block.deadbush) // Example of another input item
+
+			.create("FlowerPot_Dead", new ItemStack(Plants[0], 1)); // Replace with your output item/block
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"ppp",
+				"ppp",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('p', Block.sugarcane) // Example of another input item
+
+			.create("FlowerPot_Sugarcane", new ItemStack(Plants[1], 1)); // Replace with your output item/block
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"   ",
+				"ppp",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('p', new ItemStack(Item.dye, 1, 15)) // Example of another input item
+
+			.create("FlowerPot_Empty", new ItemStack(Plants[2], 1)); // Replace with your output item/block
 
 
 

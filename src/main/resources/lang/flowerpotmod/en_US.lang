@@ -79,7 +79,7 @@ tile.FlowerPotMod.flowerpot_weedtop.name=Weed Flower Bouquet
 tile.FlowerPotMod.flowerpot_weedtop.desc=A bundle of weeds.
 
 
-tile.FlowerPotMod.flowerpot_shroombottom.name=Fungal Shroompot
+tile.FlowerPotMod.flowerpot_shroombottom.name=Fungal Growpot
 tile.FlowerPotMod.flowerpot_shroombottom.desc=A planted colony of mushrooms. Induce fruiting with bonemeal.
 tile.FlowerPotMod.flowerpot_shroomtop.name=Fungal Shrouquet
 tile.FlowerPotMod.flowerpot_shroomtop.desc=A bundle of colonial mushrooms.
@@ -101,6 +101,19 @@ tile.FlowerPotMod.flowerpot_whiteshroombottom.desc=A strange display of white mu
 tile.FlowerPotMod.flowerpot_whiteshroomtop.name=White Shrouquet
 tile.FlowerPotMod.flowerpot_whiteshroomtop.desc=A bundle of white mushrooms.
 
+tile.FlowerPotMod.flowerpot_deadbottom.name=Dead Plantpot
+tile.FlowerPotMod.flowerpot_deadbottom.desc=A shriveled heap of sticks and twigs of unclear identity.
+tile.FlowerPotMod.flowerpot_deadtop.name=Dead Plants
+tile.FlowerPotMod.flowerpot_deadtop.desc=A shriveled bundle of sticks and twigs of unclear identity.
+
+tile.FlowerPotMod.flowerpot_sugarcanebottom.name=Sugarcane Plantpot
+tile.FlowerPotMod.flowerpot_sugarcanebottom.desc=A sandy display of thick reeds.
+tile.FlowerPotMod.flowerpot_sugarcanetop.name=Sugarcane Plants
+tile.FlowerPotMod.flowerpot_sugarcanetop.desc=A sandy bundle of thick reeds.
+
+tile.FlowerPotMod.flowerpot_emptybottom.name=Empty Plantpot
+tile.FlowerPotMod.flowerpot_emptybottom.desc=A blank pot filled with nothing but dirt.
+
 
 tile.FlowerPotMod.flowerpot_oakbottom.name=Oak Treepot
 tile.FlowerPotMod.flowerpot_oakbottom.desc=A potted miniature oak tree.
@@ -108,8 +121,8 @@ tile.FlowerPotMod.flowerpot_birchbottom.name=Birch Treepot
 tile.FlowerPotMod.flowerpot_birchbottom.desc=A potted miniature birch tree.
 tile.FlowerPotMod.flowerpot_pinebottom.name=Pine Treepot
 tile.FlowerPotMod.flowerpot_pinebottom.desc=A potted miniature pine tree.
-tile.FlowerPotMod.flowerpot_cherrybottom.name=Cherry Treepot
-tile.FlowerPotMod.flowerpot_cherrybottom.desc=A potted miniature cherry tree. Induce fruiting with bonemeal.
+tile.FlowerPotMod.flowerpot_cherrybottom.name=Cherry Growpot
+tile.FlowerPotMod.flowerpot_cherrybottom.desc=A planted miniature cherry tree. Induce fruiting with bonemeal.
 tile.FlowerPotMod.flowerpot_palmbottom.name=Palm Treepot
 tile.FlowerPotMod.flowerpot_palmbottom.desc=A potted miniature palm tree.
 tile.FlowerPotMod.flowerpot_thornbottom.name=Thorn Treepot
@@ -120,8 +133,8 @@ tile.FlowerPotMod.flowerpot_shrubbottom.name=Shrub Treepot
 tile.FlowerPotMod.flowerpot_shrubbottom.desc=A potted miniature shrub.
 tile.FlowerPotMod.flowerpot_mossybottom.name=Mossy Treepot
 tile.FlowerPotMod.flowerpot_mossybottom.desc=A potted miniature oak tree, covered in moss.
-tile.FlowerPotMod.flowerpot_cocoabottom.name=Cocoa Treepot
-tile.FlowerPotMod.flowerpot_cocoabottom.desc=A potted miniature cocoa tree. Induce fruiting with bonemeal.
+tile.FlowerPotMod.flowerpot_cocoabottom.name=Cocoa Growpot
+tile.FlowerPotMod.flowerpot_cocoabottom.desc=A planted miniature cocoa tree. Induce fruiting with bonemeal.
 tile.FlowerPotMod.flowerpot_retrobottom.name=Retro Treepot
 tile.FlowerPotMod.flowerpot_retrobottom.desc=A potted miniature oak tree, from a faraway land.
 

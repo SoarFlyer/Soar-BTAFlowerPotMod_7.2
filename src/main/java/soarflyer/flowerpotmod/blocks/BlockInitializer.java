@@ -242,9 +242,9 @@ public class BlockInitializer {
 			.setBlockSound(BlockSounds.STONE)
 			.setHardness(0.5F)
 			.setResistance(0.5F)
-			.setTopTexture("flowerpotmod:block/Top_TreePot")
-			.setSideTextures("flowerpotmod:block/Side_TreePot")
-			.setBottomTexture("flowerpotmod:block/Bottom_TreePot")
+			.setTopTexture("flowerpotmod:block/Top_GoldPot")
+			.setSideTextures("flowerpotmod:block/Side_GoldPot")
+			.setBottomTexture("flowerpotmod:block/Bottom_GoldPot")
 			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
 
 		custom_block = new Bottom_RetroTreePot("flowerpot_retrobottom", BlockID + ID_Retro);
@@ -432,6 +432,47 @@ public class BlockInitializer {
 		custom_block = new Bottom_ShroomPot("flowerpot_shroombottom", BlockID + ID_Shroom);
 		custom_bottom_builder29.build(custom_block);
 
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder30 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_DeadPot")
+			.setSideTextures("flowerpotmod:block/Side_DeadPot")
+			.setBottomTexture("flowerpotmod:block/Bottom_DeadPot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_DeadPot("flowerpot_deadbottom", BlockID + ID_Dead);
+		custom_bottom_builder30.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder31 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_SandPot")
+			.setSideTextures("flowerpotmod:block/Side_SandPot")
+			.setBottomTexture("flowerpotmod:block/Bottom_SandPot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_SugarcanePot("flowerpot_sugarcanebottom", BlockID + ID_Sugarcane);
+		custom_bottom_builder31.build(custom_block);
+
+		// Creating BOTTOM blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_bottom_builder32 = standard_block_builder
+			.setBlockModel(Model_BottomFlowerPot::new)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.5F)
+			.setResistance(0.5F)
+			.setTopTexture("flowerpotmod:block/Top_EmptyPot")
+			.setSideTextures("flowerpotmod:block/Side_EmptyPot")
+			.setBottomTexture("flowerpotmod:block/Bottom_EmptyPot")
+			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
+
+		custom_block = new Bottom_EmptyPot("flowerpot_emptybottom", BlockID + ID_Empty);
+		custom_bottom_builder32.build(custom_block);
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		///// TOP
@@ -997,6 +1038,38 @@ public class BlockInitializer {
 
 		custom_block = new Top_ShroomPot_Fruiting("flowerpot_shroomtop_fruiting", BlockID + ID_Shroom + 3);
 		custom_top_builder29c.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder30 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_DeadPot")
+			.setEastTexture("flowerpotmod:block/Arrangement_DeadPot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_DeadPot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_DeadPot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_DeadPot("flowerpot_deadtop", BlockID + ID_Dead + 1);
+		custom_top_builder30.build(custom_block);
+
+		// Creating TOP blocks ////////////////////////////////////////////////////////////////////////////////////
+		BlockBuilder custom_top_builder31 = standard_block_builder
+			.setBlockModel(Model_TopFlowerPot::new)
+			.setBlockSound(BlockSounds.GRASS)
+			.setHardness(1.0F)
+			.setResistance(1.0F)
+			.setUseInternalLight()
+			.setNorthTexture("flowerpotmod:block/Arrangement_SugarcanePot")
+			.setEastTexture("flowerpotmod:block/Arrangement_SugarcanePot")
+			.setSouthTexture("flowerpotmod:block/ArrangementF_SugarcanePot")
+			.setWestTexture("flowerpotmod:block/ArrangementF_SugarcanePot")
+			.setTags(BlockTags.NOT_IN_CREATIVE_MENU, BlockTags.PREVENT_MOB_SPAWNS);
+
+		custom_block = new Top_SugarcanePot("flowerpot_sugarcanetop", BlockID + ID_Sugarcane + 1);
+		custom_top_builder31.build(custom_block);
 
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

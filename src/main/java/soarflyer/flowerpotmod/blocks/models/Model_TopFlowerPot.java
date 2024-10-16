@@ -28,7 +28,7 @@ public class Model_TopFlowerPot<T extends Block> extends BlockModelStandard<T> {
 		//flag |= this.renderBlocks.enableAO = false;
 		// Draw North
 		block.setBlockBounds(1, -0.5, 0.5625, 0, 0.5, 0.5625);
-			//renderBlocks.flipTexture = true;
+			renderBlocks.flipTexture = true;
 		//flag |= this.renderBlocks.enableAO = false; //whyyyyyyyyyyyyyy
 		//this.renderBlocks.enableAO = false;
 		flag |= this.renderStandardBlock(tessellator, this.block, x ,y ,z );
