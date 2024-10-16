@@ -1,16 +1,12 @@
 package soarflyer.flowerpotmod.blocks.flowerpots;
 
-import net.minecraft.core.NextTickListEntry;
 import net.minecraft.core.block.Block;
-import net.minecraft.core.block.BlockTileEntity;
-import net.minecraft.core.block.entity.TileEntity;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.entity.EntityLiving;
 import net.minecraft.core.entity.player.EntityPlayer;
 import net.minecraft.core.enums.LightLayer;
 import net.minecraft.core.item.IBonemealable;
 import net.minecraft.core.item.Item;
-import net.minecraft.core.item.ItemDye;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.sound.SoundCategory;
 import net.minecraft.core.util.helper.Side;
@@ -63,7 +59,7 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 	public void onBlockPlaced(World world, int x, int y, int z, Side side, EntityLiving entity, double sideHeight) {
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
-		int DownID = world.getBlockId(x, y - 1, z);
+		//int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeID && UpID == 0) {
 			world.setBlockAndMetadata(x, y + 1, z, ChangeTopID, world.getBlockMetadata(x, y, z));
 		}
@@ -75,7 +71,7 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 	public void onBlockRemoved(World world, int x, int y, int z, int data) {
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
-		int DownID = world.getBlockId(x, y - 1, z);
+		//int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeID && UpID == ChangeTopID) {
 			world.setBlockAndMetadata(x, y + 1, z, 0, world.getBlockMetadata(x, y, z));
 		}
@@ -87,7 +83,7 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 	public boolean onBlockRightClicked(World world, int x, int y, int z, EntityPlayer player, Side side, double xHit, double yHit) {
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
-		int DownID = world.getBlockId(x, y - 1, z);
+		//int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeID && UpID == ChangeTopID_Fruit) {
 			world.dropItem(x, y, z, new ItemStack(Item.foodCherry, world.rand.nextInt(2) + 1)); // thanks luke /^.^ \  <-- evil face
 			world.playSoundEffect(player, SoundCategory.WORLD_SOUNDS, (double)x + 0.5, (double)y + 0.5, (double)z + 0.5, "random.pop", 0.3F, 1.0f);
@@ -116,7 +112,7 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 	public boolean onBonemealUsed(ItemStack itemStack, EntityPlayer entityPlayer, World world, int i, int j, int k, Side side, double d, double e) {
 		int MyID = world.getBlockId(i, j, k);
 		int UpID = world.getBlockId(i, j + 1, k);
-		int DownID = world.getBlockId(i, j - 1, k);
+		//int DownID = world.getBlockId(i, j - 1, k);
 		if (MyID == ChangeID && UpID == ChangeTopID) {
 			world.setBlockAndMetadataWithNotify(i, j + 1, k, ChangeTopID_Flower, world.getBlockMetadata(i, j, k));
 			if (entityPlayer.getGamemode().consumeBlocks()) {
@@ -139,7 +135,7 @@ public class Bottom_CherryTreePot extends Block implements IBonemealable {
 		boolean flag = world.scheduledUpdatesAreImmediate;
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
-		int DownID = world.getBlockId(x, y - 1, z);
+		//int DownID = world.getBlockId(x, y - 1, z);
 		if ((MyID == ChangeID && UpID == ChangeTopID_Flower) && ((world.getSavedLightValue(LightLayer.Block,x,y+1,z) >= 5) || (((world.getSavedLightValue(LightLayer.Sky,x,y+1,z) - world.skyDarken) >= 5) && (world.canBlockSeeTheSky(x,y+1,z))))){ // jesus christ
 			if ((rand.nextInt(RandyBig) > RandyComp)){
 				RandyComp = RandyBig;

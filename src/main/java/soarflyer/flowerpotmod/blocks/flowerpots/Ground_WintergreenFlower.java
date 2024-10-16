@@ -1,7 +1,6 @@
 package soarflyer.flowerpotmod.blocks.flowerpots;
 
 import net.minecraft.core.block.BlockFlower;
-import net.minecraft.core.world.World;
 
 public class Ground_WintergreenFlower extends BlockFlower {
 

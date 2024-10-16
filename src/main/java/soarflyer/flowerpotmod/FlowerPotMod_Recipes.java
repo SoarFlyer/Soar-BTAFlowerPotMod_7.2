@@ -2,12 +2,12 @@ package soarflyer.flowerpotmod;
 
 import net.minecraft.core.block.Block;
 import net.minecraft.core.data.registry.Registries;
-import net.minecraft.core.data.registry.recipe.RecipeGroup;
+//import net.minecraft.core.data.registry.recipe.RecipeGroup;
 import net.minecraft.core.data.registry.recipe.RecipeNamespace;
 import net.minecraft.core.data.registry.recipe.RecipeRegistry;
-import net.minecraft.core.data.registry.recipe.RecipeSymbol;
-import net.minecraft.core.data.registry.recipe.entry.RecipeEntryCrafting;
-import net.minecraft.core.data.registry.recipe.entry.RecipeEntryFurnace;
+//import net.minecraft.core.data.registry.recipe.RecipeSymbol;
+//import net.minecraft.core.data.registry.recipe.entry.RecipeEntryCrafting;
+//import net.minecraft.core.data.registry.recipe.entry.RecipeEntryFurnace;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
 import turniplabs.halplibe.helper.RecipeBuilder;
@@ -501,18 +501,18 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 
 		// So, you can use this template to add more groups if needed.
 		// Constant for a group of crafting recipes related to the workbench.
-		final RecipeGroup<RecipeEntryCrafting<?, ?>> WORKBENCH =
+		//final RecipeGroup<RecipeEntryCrafting<?, ?>> WORKBENCH =
 
 			// Create a new RecipeGroup instance.
-			new RecipeGroup<>(
+			//new RecipeGroup<>(
 
-				// Create a RecipeSymbol for the workbench.
-				new RecipeSymbol(
+			//	// Create a RecipeSymbol for the workbench.
+			//	new RecipeSymbol(
 
-					// ItemStack representing the workbench block.
-					new ItemStack(Block.workbench)
-				)
-			);
+			//		// ItemStack representing the workbench block.
+			//		new ItemStack(Block.workbench)
+			//	)
+			//);
 
 		// Add the recipe group - id: yourGroupId
 		//PARAGLIDER.register("workbench", WORKBENCH); // what does this even do? oh well

@@ -3,14 +3,9 @@ package soarflyer.flowerpotmod.blocks.flowerpots;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.entity.EntityLiving;
-import net.minecraft.core.entity.player.EntityPlayer;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.util.helper.Side;
-import net.minecraft.core.util.phys.AABB;
 import net.minecraft.core.world.World;
-import net.minecraft.core.world.WorldSource;
-
-import java.util.ArrayList;
 
 import static soarflyer.flowerpotmod.FlowerPotMod.*;
 
@@ -20,7 +15,7 @@ public class Top_RoseFlowerPot extends Block {
 	}
 
 	/// Change this when making new blocks
-	int ChangeID = BlockID + ID_Rose;
+	//int ChangeID = BlockID + ID_Rose;
 	int ChangeTopID = BlockID + ID_Rose + 1;
 
 
@@ -29,7 +24,7 @@ public class Top_RoseFlowerPot extends Block {
 	@Override
 	public void onNeighborBlockChange(World world, int x, int y, int z, int blockId) {
 		int MyID = world.getBlockId(x, y, z);
-		int UpID = world.getBlockId(x, y + 1, z);
+		//int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeTopID && DownID == 0) {
 			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
@@ -39,7 +34,7 @@ public class Top_RoseFlowerPot extends Block {
 
 	public void onBlockPlaced(World world, int x, int y, int z, Side side, EntityLiving entity, double sideHeight) {
 		int MyID = world.getBlockId(x, y, z);
-		int UpID = world.getBlockId(x, y + 1, z);
+		//int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeTopID && DownID < BlockID) {
 			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));

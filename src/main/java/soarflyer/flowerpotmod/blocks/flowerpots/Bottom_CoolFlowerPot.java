@@ -12,7 +12,6 @@ import net.minecraft.core.world.World;
 import net.minecraft.core.world.WorldSource;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 import static soarflyer.flowerpotmod.FlowerPotMod.*;
 
@@ -32,7 +31,7 @@ public class Bottom_CoolFlowerPot extends Block {
 	public void onBlockPlaced(World world, int x, int y, int z, Side side, EntityLiving entity, double sideHeight) {
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
-		int DownID = world.getBlockId(x, y - 1, z);
+		//int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeID && UpID == 0) {
 			world.setBlockAndMetadata(x, y + 1, z, ChangeTopID, world.getBlockMetadata(x, y, z));
 		}
@@ -44,7 +43,7 @@ public class Bottom_CoolFlowerPot extends Block {
 	public void onBlockRemoved(World world, int x, int y, int z, int data) {
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
-		int DownID = world.getBlockId(x, y - 1, z);
+		//int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeID && UpID == ChangeTopID) {
 			world.setBlockAndMetadata(x, y + 1, z, 0, world.getBlockMetadata(x, y, z));
 		}

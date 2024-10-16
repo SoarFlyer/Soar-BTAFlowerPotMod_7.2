@@ -15,7 +15,7 @@ public class Top_WeedFlowerPot extends Block {
 	}
 
 	/// Change this when making new blocks
-	int ChangeID = BlockID + ID_Weed;
+	//int ChangeID = BlockID + ID_Weed;
 	int ChangeTopID = BlockID + ID_Weed + 1;
 
 
@@ -24,7 +24,7 @@ public class Top_WeedFlowerPot extends Block {
 	@Override
 	public void onNeighborBlockChange(World world, int x, int y, int z, int blockId) {
 		int MyID = world.getBlockId(x, y, z);
-		int UpID = world.getBlockId(x, y + 1, z);
+		//int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeTopID && DownID == 0) {
 			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
@@ -33,7 +33,7 @@ public class Top_WeedFlowerPot extends Block {
 
 	public void onBlockPlaced(World world, int x, int y, int z, Side side, EntityLiving entity, double sideHeight) {
 		int MyID = world.getBlockId(x, y, z);
-		int UpID = world.getBlockId(x, y + 1, z);
+		//int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeTopID && DownID < BlockID) {
 			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
