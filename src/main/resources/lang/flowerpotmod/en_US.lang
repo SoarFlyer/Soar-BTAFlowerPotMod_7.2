@@ -112,7 +112,7 @@ tile.FlowerPotMod.flowerpot_sugarcanetop.name=Sugarcane Plants
 tile.FlowerPotMod.flowerpot_sugarcanetop.desc=A sandy bundle of thick reeds.
 
 tile.FlowerPotMod.flowerpot_emptybottom.name=Empty Plantpot
-tile.FlowerPotMod.flowerpot_emptybottom.desc=A blank pot filled with nothing but dirt.
+tile.FlowerPotMod.flowerpot_emptybottom.desc=A blank pot filled with nothing but dirt. Fill by shearing an occupied pot.
 
 
 tile.FlowerPotMod.flowerpot_oakbottom.name=Oak Treepot
