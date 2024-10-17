@@ -6,6 +6,7 @@ import net.minecraft.core.entity.EntityLiving;
 import net.minecraft.core.entity.player.EntityPlayer;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
+import net.minecraft.core.sound.SoundCategory;
 import net.minecraft.core.util.helper.Side;
 import net.minecraft.core.util.phys.AABB;
 import net.minecraft.core.world.World;
@@ -61,6 +62,8 @@ public class Bottom_CoolFlowerPot extends Block {
 					// this is a bit janky
 					// but now you can mix and match pots!!!!!
 					// :)
+					world.playSoundEffect(player, SoundCategory.WORLD_SOUNDS, (double)x + 0.5, (double)y + 0.5, (double)z + 0.5, "random.pop", 0.3F, 1.0f);
+					// can't find the shear sound path :(
 				}
 			}
 		}

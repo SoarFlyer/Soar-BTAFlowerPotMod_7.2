@@ -78,7 +78,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -90,7 +90,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -102,7 +102,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -114,7 +114,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -126,7 +126,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -138,7 +138,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -152,7 +152,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -164,7 +164,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -176,7 +176,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -189,7 +189,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -201,7 +201,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -213,7 +213,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"fff",
+				"   ",
 				"fff",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
@@ -476,7 +476,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shaped("MOD_ID")
 			.setShape(
-				"ppp",
+				"   ",
 				"ppp",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block

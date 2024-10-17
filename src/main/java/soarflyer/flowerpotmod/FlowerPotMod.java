@@ -34,7 +34,7 @@ import turniplabs.halplibe.util.RecipeEntrypoint;
 //
 // And don't forget to name it in en_US.lang!
 //
-// idk how to make a readable config file so i'll put thanks here
+// idk how to make a user readable config file so i'll put thanks here
 // thanks cloud54 for the nice mushroom textures i asked permission to use
 // thanks luke and useless for the code that i stole without asking
 /// ------------------------------------------------------

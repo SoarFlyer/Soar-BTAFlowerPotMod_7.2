@@ -98,6 +98,8 @@ public class Bottom_CocoaTreePot extends Block implements IBonemealable {
 					// this is a bit janky
 					// but now you can mix and match pots!!!!!
 					// :)
+					world.playSoundEffect(player, SoundCategory.WORLD_SOUNDS, (double)x + 0.5, (double)y + 0.5, (double)z + 0.5, "random.pop", 0.3F, 1.0f);
+					// can't find the shear sound path :(
 				}
 			} else if ((UpID == ChangeTopID_Flower) && (player.getHeldItem().getItem() == Item.foodAppleGold)) {
 				if (player.getGamemode().isPlayerInvulnerable()) {

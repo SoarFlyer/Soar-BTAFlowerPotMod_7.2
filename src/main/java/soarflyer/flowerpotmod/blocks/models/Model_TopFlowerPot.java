@@ -55,6 +55,7 @@ public class Model_TopFlowerPot<T extends Block> extends BlockModelStandard<T> {
 		renderBlocks.enableAO = false; //PLEADEFDS
 
 		this.block.setBlockBoundsBasedOnState(BlockModelStandard.renderBlocks.blockAccess, x, y, z);
+		//this.renderBlocks.enableAO = false;
 		return flag;
 	}
 
