@@ -27,10 +27,9 @@ public class Top_BluebellFlowerPot extends Block {
 		//int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeTopID && DownID == 0) {
-			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
+			world.setBlockAndMetadataWithNotify(x, y, z, 0, world.getBlockMetadata(x, y, z));
 		}
 	}
-
 
 
 	public void onBlockPlaced(World world, int x, int y, int z, Side side, EntityLiving entity, double sideHeight) {
@@ -38,11 +37,11 @@ public class Top_BluebellFlowerPot extends Block {
 		//int UpID = world.getBlockId(x, y + 1, z);
 		int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeTopID && DownID < BlockID) {
-			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
+			world.setBlockAndMetadataWithNotify(x, y, z, 0, world.getBlockMetadata(x, y, z));
 			world.dropItem(x, y, z, new ItemStack(Block.getBlock(ChangeTopID), 1));
 		}
 		if (MyID == ChangeTopID && DownID > BlockID + BlockIDMax) {
-			world.setBlockAndMetadata(x, y, z, 0, world.getBlockMetadata(x, y, z));
+			world.setBlockAndMetadataWithNotify(x, y, z, 0, world.getBlockMetadata(x, y, z));
 			world.dropItem(x, y, z, new ItemStack(Block.getBlock(ChangeTopID), 1));
 		}
 

@@ -56,13 +56,15 @@ public class Bottom_VariedFlowerPot extends Block {
 		if (player.getHeldItem() != null){
 			if ((player.getHeldItem().getItem() == Item.toolShears) || (player.getHeldItem().getItem() == Item.toolShearsSteel)){
 				if ((UpID >= BlockID) && (UpID <= BlockID + BlockIDMax)) {
-					world.setBlockAndMetadataWithNotify(x, y + 1, z, 0, world.getBlockMetadata(x, y, z));
-					world.dropItem(x, y, z, new ItemStack(Block.getBlock(UpID), 1));
-					// this is a bit janky
-					// but now you can mix and match pots!!!!!
-					// :)
-					world.playSoundEffect(player, SoundCategory.WORLD_SOUNDS, (double)x + 0.5, (double)y + 0.5, (double)z + 0.5, "random.pop", 0.3F, 1.0f);
-					// can't find the shear sound path :(
+					if (!world.isClientSide) {
+						world.setBlockAndMetadataWithNotify(x, y + 1, z, 0, world.getBlockMetadata(x, y, z));
+						world.dropItem(x, y, z, new ItemStack(Block.getBlock(UpID), 1));
+						// this is a bit janky
+						// but now you can mix and match pots!!!!!
+						// :)
+						world.playSoundEffect(player, SoundCategory.WORLD_SOUNDS, (double) x + 0.5, (double) y + 0.5, (double) z + 0.5, "random.pop", 0.3F, 1.0f);
+						// can't find the shear sound path :(
+					}
 				}
 			}
 		}

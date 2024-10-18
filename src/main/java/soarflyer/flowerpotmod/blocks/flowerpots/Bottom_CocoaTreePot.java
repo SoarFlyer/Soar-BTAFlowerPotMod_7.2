@@ -84,28 +84,30 @@ public class Bottom_CocoaTreePot extends Block implements IBonemealable {
 		int MyID = world.getBlockId(x, y, z);
 		int UpID = world.getBlockId(x, y + 1, z);
 		//int DownID = world.getBlockId(x, y - 1, z);
-		if (MyID == ChangeID && UpID == ChangeTopID_Fruit) {
-			world.dropItem(x, y, z, new ItemStack(Item.dye, 1, 3)); // thanks luke /^.^ \  <-- evil face
-			world.playSoundEffect(player, SoundCategory.WORLD_SOUNDS, (double)x + 0.5, (double)y + 0.5, (double)z + 0.5, "random.pop", 0.3F, 1.0f);
-			world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Flower, world.getBlockMetadata(x, y, z));
-			player.swingItem();
-			return true;
-		}else if (player.getHeldItem() != null) { // this NEEDS to be its own if, or the game always crashes | cannot check for null and !null
-			if ((player.getHeldItem().getItem() == Item.toolShears) || (player.getHeldItem().getItem() == Item.toolShearsSteel)) {
-				if (((UpID >= BlockID) && (UpID <= BlockID + BlockIDMax)) && ((UpID != ChangeTopID_Flower) && UpID != ChangeTopID_Fruit)) {
-					world.setBlockAndMetadataWithNotify(x, y + 1, z, 0, world.getBlockMetadata(x, y, z));
-					world.dropItem(x, y, z, new ItemStack(Block.getBlock(UpID), 1));
-					// this is a bit janky
-					// but now you can mix and match pots!!!!!
-					// :)
-					world.playSoundEffect(player, SoundCategory.WORLD_SOUNDS, (double)x + 0.5, (double)y + 0.5, (double)z + 0.5, "random.pop", 0.3F, 1.0f);
-					// can't find the shear sound path :(
+		if (!world.isClientSide) {
+			if (MyID == ChangeID && UpID == ChangeTopID_Fruit) {
+				world.dropItem(x, y, z, new ItemStack(Item.dye, 1, 3)); // thanks luke /^.^ \  <-- evil face
+				world.playSoundEffect(player, SoundCategory.WORLD_SOUNDS, (double) x + 0.5, (double) y + 0.5, (double) z + 0.5, "random.pop", 0.3F, 1.0f);
+				world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Flower, world.getBlockMetadata(x, y, z));
+				player.swingItem();
+				return true;
+			} else if (player.getHeldItem() != null) { // this NEEDS to be its own if, or the game always crashes | cannot check for null and !null
+				if ((player.getHeldItem().getItem() == Item.toolShears) || (player.getHeldItem().getItem() == Item.toolShearsSteel)) {
+					if (((UpID >= BlockID) && (UpID <= BlockID + BlockIDMax)) && ((UpID != ChangeTopID_Flower) && UpID != ChangeTopID_Fruit)) {
+						world.setBlockAndMetadataWithNotify(x, y + 1, z, 0, world.getBlockMetadata(x, y, z));
+						world.dropItem(x, y, z, new ItemStack(Block.getBlock(UpID), 1));
+						// this is a bit janky
+						// but now you can mix and match pots!!!!!
+						// :)
+						world.playSoundEffect(player, SoundCategory.WORLD_SOUNDS, (double) x + 0.5, (double) y + 0.5, (double) z + 0.5, "random.pop", 0.3F, 1.0f);
+						// can't find the shear sound path :(
+					}
+				} else if ((UpID == ChangeTopID_Flower) && (player.getHeldItem().getItem() == Item.foodAppleGold)) {
+					if (player.getGamemode().isPlayerInvulnerable()) {
+						world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Fruit, world.getBlockMetadata(x, y, z));
+					}
+					// nested ifs look better than a long ass line I gotta horizontally scroll through
 				}
-			} else if ((UpID == ChangeTopID_Flower) && (player.getHeldItem().getItem() == Item.foodAppleGold)) {
-				if (player.getGamemode().isPlayerInvulnerable()) {
-					world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID_Fruit, world.getBlockMetadata(x, y, z));
-				}
-				// nested ifs look better than a long ass line I gotta horizontally scroll through
 			}
 		}
 		return super.onBlockRightClicked(world, x, y, z, player, side, xHit, yHit);
