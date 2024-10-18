@@ -35,7 +35,7 @@ public class Bottom_CocoaTreePot extends Block implements IBonemealable {
 
 
 	// for growing
-	int RandyBig = 15000;
+	int RandyBig = 12500;
 	float RandyInc = 0.01f;
 	float RandyComp = RandyBig;
 

@@ -34,7 +34,7 @@ public class Bottom_ShroomPot extends Block implements IBonemealable {
 	int ChangeTopID_Fruit = BlockID + ID_Shroom + 3;
 
 	// for growing
-	int RandyBig = 22500;
+	int RandyBig = 25000;
 	float RandyInc = 0.01f;
 	float RandyComp = RandyBig;
 

@@ -454,8 +454,10 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 				" s ",
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
-			.addInput('b', Item.brickClay) // Example of another input item
-			.addInput('s', Item.foodAppleGold) // Example of another input item
+			//.addInput('b', Item.brickClay) // Example of another input item
+			//.addInput('s', Item.foodAppleGold) // Example of another input item <-- too much I think
+			.addInput('b', Item.ingotGold) // Example of another input item
+			.addInput('s', Block.saplingOak) // Example of another input item
 
 			.create("FlowerPot_Retro", new ItemStack(TreePots[10], 1)); // Replace with your output item/block
 
@@ -506,7 +508,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shapeless("MOD_ID")
-			.addInput(Block.flowerLightBlue) // Replace with your input item/block
+			.addInput(Block.flowerPurple) // Replace with your input item/block
 			.addInput(Block.flowerYellow) // Example of another input item
 
 			.create("FlowerPot_GloryFlower", new ItemStack(Ground[0], 1)); // Replace with your output item/block
@@ -520,7 +522,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shapeless("MOD_ID")
-			.addInput(Block.flowerPurple) // Replace with your input item/block
+			.addInput(Block.flowerLightBlue) // Replace with your input item/block
 			.addInput(Block.flowerYellow) // Example of another input item
 
 			.create("FlowerPot_NightshadeFlower", new ItemStack(Ground[2], 1)); // Replace with your output item/block
