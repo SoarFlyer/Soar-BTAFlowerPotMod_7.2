@@ -1,6 +1,5 @@
 package soarflyer.flowerpotmod.blocks.models;
 
-import net.minecraft.client.render.RenderBlocks;
 import net.minecraft.client.render.block.model.BlockModelStandard;
 import net.minecraft.client.render.tessellator.Tessellator;
 import net.minecraft.core.block.Block;
@@ -15,8 +14,8 @@ public class Model_BottomFlowerPot<T extends Block> extends BlockModelStandard<T
 	@Override
 	public boolean render(Tessellator tessellator, int x, int y, int z) {
 
-		renderBlocks.enableAO = false; // does this work?????
-		RenderBlocks.enableDirectionalLight = false;
+		//renderBlocks.enableAO = false; // does this work?????
+		//RenderBlocks.enableDirectionalLight = false;
 
 		boolean flag = false;
 		block.setBlockBounds(0.1875, 0, 0.1875, 0.8125, 0.5, 0.8125);
