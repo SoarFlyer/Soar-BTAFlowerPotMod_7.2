@@ -2,7 +2,6 @@ package soarflyer.flowerpotmod.blocks.flowerpots;
 
 import net.minecraft.core.block.BlockMushroom;
 
-
 public class Ground_WhiteMushroom extends BlockMushroom {
 	public Ground_WhiteMushroom(String key, int id) {
 		super(key, id);

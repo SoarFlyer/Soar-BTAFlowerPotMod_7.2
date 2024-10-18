@@ -38,11 +38,15 @@ public class Top_CherryTreePot_Fruiting extends Block {
 		int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeTopID && DownID < BlockID) {
 			world.setBlockAndMetadataWithNotify(x, y, z, 0, world.getBlockMetadata(x, y, z));
-			world.dropItem(x, y, z, new ItemStack(Block.getBlock(ChangeTopID), 1));
+			if (!world.isClientSide) {
+				world.dropItem(x, y, z, new ItemStack(Block.getBlock(ChangeTopID), 1));
+			}
 		}
 		if (MyID == ChangeTopID && DownID > BlockID + BlockIDMax) {
 			world.setBlockAndMetadataWithNotify(x, y, z, 0, world.getBlockMetadata(x, y, z));
-			world.dropItem(x, y, z, new ItemStack(Block.getBlock(ChangeTopID), 1));
+			if (!world.isClientSide) {
+				world.dropItem(x, y, z, new ItemStack(Block.getBlock(ChangeTopID), 1));
+			}
 		}
 
 	}
