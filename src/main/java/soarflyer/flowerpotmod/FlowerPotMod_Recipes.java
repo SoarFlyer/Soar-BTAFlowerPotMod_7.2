@@ -483,7 +483,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 				"bdb")
 			.addInput('d', Block.dirt) // Replace with your input item/block
 			.addInput('b', Item.brickClay) // Example of another input item
-			.addInput('p', Block.sugarcane) // Example of another input item
+			.addInput('p', Item.sugarcane) // Example of another input item
 
 			.create("FlowerPot_Sugarcane", new ItemStack(Plants[1], 1)); // Replace with your output item/block
 

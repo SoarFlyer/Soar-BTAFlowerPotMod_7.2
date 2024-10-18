@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Flower Pot Mod",
-  "description": "Adds themed flower pots. Built using Turnip Labs template.",
+  "description": "Adds themed flowerpots. Built using Turnip Labs template.",
   "authors": [
     "SoarFlyer"
   ],
