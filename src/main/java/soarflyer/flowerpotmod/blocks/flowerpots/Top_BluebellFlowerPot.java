@@ -5,7 +5,10 @@ import net.minecraft.core.block.material.Material;
 import net.minecraft.core.entity.EntityLiving;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.util.helper.Side;
+import net.minecraft.core.util.phys.AABB;
 import net.minecraft.core.world.World;
+
+import java.util.ArrayList;
 
 import static soarflyer.flowerpotmod.FlowerPotMod.*;
 
@@ -65,4 +68,12 @@ public class Top_BluebellFlowerPot extends Block {
 	public boolean renderAsNormalBlock() {
 		return false;
 	}
+
+	@Override
+	public void getCollidingBoundingBoxes(World world, int x, int y, int z, AABB aabb, ArrayList<AABB> aabbList) {
+		// Adds the collision box for the bottom section of the block
+		setBlockBounds(0.2, -1, 0.2, 0.8, -0.5, 0.8);
+		super.getCollidingBoundingBoxes(world, x, y, z, aabb, aabbList);
+	}
 }
+
