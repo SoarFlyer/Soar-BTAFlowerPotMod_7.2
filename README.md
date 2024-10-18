@@ -1,38 +1,36 @@
-# Example Mod
+# The Flowerpot Mod
 
-Template for making Babric mods for BTA!
+This is a mod that adds a heap of decorative pots filled with flowers, trees, mushrooms, and more. The arrangements come in themed pots which can be customized after placing.
 
-**Note: *DO NOT fork this repository unless you want to contribute!***
+The mod adds:
+* 14 Flowerpots
+* 11 Treepots
+* 4 Shroompots
+* 2 Plantpots
+* 3 Flowers\*
+* 1 Mushroom\*
 
-## Prerequisites
-- JDK for Java 17 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
-- [Intellij IDEA](https://www.jetbrains.com/idea/download/) (Scroll down for the free community edition, if using linux **DO NOT** use the flatpak distribution)
-- Minecraft Development plugin (Optional, but highly recommended)
+Three growpots allow you to grow cherries, cocoa beans, and mushrooms in any season.
 
-## Setup instructions
-   
+\*Don't spawn, must be crafted.
 
-1. Click the `Use this template` button on this repo's page above (Will only appear if logged in). Choose `Create a new repository`, you will be redirected to a new page. Enter your repo's name and description, and hit `Create repository`.  
-   To get your project, open IntelliJ IDEA and click `Get from VCS`. Select `Repository URL` and enter your repo's url
+# **TIPS**
+* **Cherry, Cocoa, and Shroom pots need to be bonemealed** in order to grow produce.
 
-2. After the project has finished importing, close it and open it again.  
-   If that does not work, open the right sidebar with `Gradle` on it, open `Tasks` > `fabric` and run `ideaSyncTask`.
+*In creative, use a golden apple on a flowering pot to make it instantly fruit.*
 
-3. Create a new run configuration by going in `Run > Edit Configurations`.  
-   Then click on the plus icon and select Gradle. In the `Tasks and Arguments` field enter `build`.  
-   Running it will build your finished jar files and put them in `build/libs/`.
+* **Cherry and Cocoa need at least light level 5 to grow**, and Shrooms need the light level to be lower than 10 and/or be shielded from the sun.
 
-4. Lastly, open `File` > `Settings` and head to `Build, Execution, Development` > `Build Tools` > `Gradle`.  
-   Make sure `Build and run using` and `Run tests using` is set to `Gradle`.
 
-5. Done! Now, all that's left is to change every mention of `examplemod` and `turniplabs` to your own mod id and mod group, respectively. Happy modding!
+* **To mix and match flower arrangements**, right click a flowerpot with shears to remove its top. Tops can only be placed on pots.
 
-## Tips
+*To avoid confusion, you cannot replant flowering and fruiting tops, only base ones that haven't been bonemealed.*
 
-1. If you haven't already you should join the BTA modding discord! https://discord.gg/FTUNJhswBT
-2. You can set your username when launching the client run configuration by setting `--username <username>` in your program arguments.
-3. Set `online-mode` to `false` in order to be able to join your server!
-4. When launching the server run configuration you may want to remove the `nogui` program argument in order to see the regular server GUI.
-5. In Intellij you can double press shift or press ctrl+N to search class files, change the search from the default `Project Files` to `All Places` you can easily explore the classes for you dependencies and even BTA itself.
-6. In Intellij if ctrl+left click on a field or method you can quickly get information on when and where that field or method is assign or used.
+* **To obtain the new flowers and shroom**, you must 'cross breed' them in a workbench. Press U on dandelions and mushrooms to see their recipes.
 
+*They do not spawn in the world in this version.*
+
+
+Block IDs span 14116 - 14227.
+
+*Built using the Turnip Labs example mod.*
