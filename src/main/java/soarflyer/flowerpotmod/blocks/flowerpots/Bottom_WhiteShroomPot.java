@@ -33,7 +33,7 @@ public class Bottom_WhiteShroomPot extends Block {
 		int UpID = world.getBlockId(x, y + 1, z);
 		//int DownID = world.getBlockId(x, y - 1, z);
 		if (MyID == ChangeID && UpID == 0) {
-			world.setBlockAndMetadata(x, y + 1, z, ChangeTopID, world.getBlockMetadata(x, y, z));
+			world.setBlockAndMetadataWithNotify(x, y + 1, z, ChangeTopID, world.getBlockMetadata(x, y, z));
 		}
 	}
 
