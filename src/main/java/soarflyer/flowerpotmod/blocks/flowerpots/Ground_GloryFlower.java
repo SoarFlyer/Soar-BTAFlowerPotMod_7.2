@@ -19,6 +19,7 @@ public class Ground_GloryFlower extends BlockFlower implements IBonemealable {
 		this.setBlockBounds(0.3F, 0.0F, 0.3F, 0.7F, 0.6F, 0.7F);
 	}
 
+	int ThisFlower = BlockID - ID_GloryFlower;
 
 	// this is some straight ooga booga shit
 	@Override
@@ -53,44 +54,44 @@ public class Ground_GloryFlower extends BlockFlower implements IBonemealable {
 			}
 		}
 		if (rand.nextInt(15) < 10){
-			if ((NorthID == 0) && !(Block.blocksList[NorthDID] == null || !Block.blocksList[NorthDID].hasTag(BlockTags.GROWS_FLOWERS))) {
-				world.setBlockAndMetadataWithNotify(x+1, y, z, BlockID - ID_GloryFlower, world.getBlockMetadata(x, y, z));
+			if ((NorthID == 0 || NorthID == Block.layerSnow.id) && !(Block.blocksList[NorthDID] == null || !Block.blocksList[NorthDID].hasTag(BlockTags.GROWS_FLOWERS))) {
+				world.setBlockAndMetadataWithNotify(x+1, y, z, ThisFlower, world.getBlockMetadata(x, y, z));
 			}
 		}
 		if (rand.nextInt(15) < 10){
-			if ((SouthID == 0) && !(Block.blocksList[SouthDID] == null || !Block.blocksList[SouthDID].hasTag(BlockTags.GROWS_FLOWERS))) {
-				world.setBlockAndMetadataWithNotify(x-1, y, z, BlockID - ID_GloryFlower, world.getBlockMetadata(x, y, z));
+			if ((SouthID == 0 || SouthID == Block.layerSnow.id) && !(Block.blocksList[SouthDID] == null || !Block.blocksList[SouthDID].hasTag(BlockTags.GROWS_FLOWERS))) {
+				world.setBlockAndMetadataWithNotify(x-1, y, z, ThisFlower, world.getBlockMetadata(x, y, z));
 			}
 		}
 		if (rand.nextInt(15) < 10){
-			if ((EastID == 0) && !(Block.blocksList[EastDID] == null || !Block.blocksList[EastDID].hasTag(BlockTags.GROWS_FLOWERS))) {
-				world.setBlockAndMetadataWithNotify(x, y, z+1, BlockID - ID_GloryFlower, world.getBlockMetadata(x, y, z));
+			if ((EastID == 0 || EastID == Block.layerSnow.id) && !(Block.blocksList[EastDID] == null || !Block.blocksList[EastDID].hasTag(BlockTags.GROWS_FLOWERS))) {
+				world.setBlockAndMetadataWithNotify(x, y, z+1, ThisFlower, world.getBlockMetadata(x, y, z));
 			}
 		}
 		if (rand.nextInt(15) < 10){
-			if ((WestID == 0) && !(Block.blocksList[WestDID] == null || !Block.blocksList[WestDID].hasTag(BlockTags.GROWS_FLOWERS))) {
-				world.setBlockAndMetadataWithNotify(x, y, z-1, BlockID - ID_GloryFlower, world.getBlockMetadata(x, y, z));
+			if ((WestID == 0 || WestID == Block.layerSnow.id) && !(Block.blocksList[WestDID] == null || !Block.blocksList[WestDID].hasTag(BlockTags.GROWS_FLOWERS))) {
+				world.setBlockAndMetadataWithNotify(x, y, z-1, ThisFlower, world.getBlockMetadata(x, y, z));
 			}
 		}
 
 		if (rand.nextInt(20) < 10){
-			if ((NorthEastID == 0) && !(Block.blocksList[NorthEastDID] == null || !Block.blocksList[NorthEastDID].hasTag(BlockTags.GROWS_FLOWERS))) {
-				world.setBlockAndMetadataWithNotify(x+1, y, z+1, BlockID - ID_GloryFlower, world.getBlockMetadata(x, y, z));
+			if ((NorthEastID == 0 || NorthEastID == Block.layerSnow.id) && !(Block.blocksList[NorthEastDID] == null || !Block.blocksList[NorthEastDID].hasTag(BlockTags.GROWS_FLOWERS))) {
+				world.setBlockAndMetadataWithNotify(x+1, y, z+1, ThisFlower, world.getBlockMetadata(x, y, z));
 			}
 		}
 		if (rand.nextInt(20) < 10){
-			if ((NorthWestID == 0) && !(Block.blocksList[NorthWestDID] == null || !Block.blocksList[NorthWestDID].hasTag(BlockTags.GROWS_FLOWERS))) {
-				world.setBlockAndMetadataWithNotify(x+1, y, z-1, BlockID - ID_GloryFlower, world.getBlockMetadata(x, y, z));
+			if ((NorthWestID == 0 || NorthWestID == Block.layerSnow.id) && !(Block.blocksList[NorthWestDID] == null || !Block.blocksList[NorthWestDID].hasTag(BlockTags.GROWS_FLOWERS))) {
+				world.setBlockAndMetadataWithNotify(x+1, y, z-1, ThisFlower, world.getBlockMetadata(x, y, z));
 			}
 		}
 		if (rand.nextInt(20) < 10){
-			if ((SouthEastID == 0) && !(Block.blocksList[SouthEastDID] == null || !Block.blocksList[SouthEastDID].hasTag(BlockTags.GROWS_FLOWERS))) {
-				world.setBlockAndMetadataWithNotify(x-1, y, z+1, BlockID - ID_GloryFlower, world.getBlockMetadata(x, y, z));
+			if ((SouthEastID == 0 || SouthEastID == Block.layerSnow.id) && !(Block.blocksList[SouthEastDID] == null || !Block.blocksList[SouthEastDID].hasTag(BlockTags.GROWS_FLOWERS))) {
+				world.setBlockAndMetadataWithNotify(x-1, y, z+1, ThisFlower, world.getBlockMetadata(x, y, z));
 			}
 		}
 		if (rand.nextInt(20) < 10){
-			if ((SouthWestID == 0) && !(Block.blocksList[SouthWestDID] == null || !Block.blocksList[SouthWestDID].hasTag(BlockTags.GROWS_FLOWERS))) {
-				world.setBlockAndMetadataWithNotify(x-1, y, z-1, BlockID - ID_GloryFlower, world.getBlockMetadata(x, y, z));
+			if ((SouthWestID == 0 || SouthWestID == Block.layerSnow.id) && !(Block.blocksList[SouthWestDID] == null || !Block.blocksList[SouthWestDID].hasTag(BlockTags.GROWS_FLOWERS))) {
+				world.setBlockAndMetadataWithNotify(x-1, y, z-1, ThisFlower, world.getBlockMetadata(x, y, z));
 			}
 		}
 		return true;

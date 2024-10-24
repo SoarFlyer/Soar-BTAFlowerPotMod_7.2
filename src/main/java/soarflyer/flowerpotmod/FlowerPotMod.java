@@ -113,9 +113,9 @@ public class FlowerPotMod implements ModInitializer, GameStartEntrypoint, Recipe
 	/// plant pots - top + 1
 	public static final int ID_Dead = 78;
 	public static final int ID_Sugarcane = 80;
+	public static final int ID_Fern = 82;
+	public static final int ID_Spinifex = 84;
 
-	// Reserved - 82 Fern
-	// Reserved - 84
 	// Reserved - 86
 	// Reserved - 88
 	// Reserved - 90

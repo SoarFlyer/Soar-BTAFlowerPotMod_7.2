@@ -44,15 +44,15 @@ tile.FlowerPotMod.flowerpot_nightshadetop.name=Nightshade Flower Bouquet
 tile.FlowerPotMod.flowerpot_nightshadetop.desc=A lush bundle of nightshade.
 
 
-tile.FlowerPotMod.flowerpot_gloryflower.name=Crossbred Glory
-tile.FlowerPotMod.flowerpot_gloryflower.desc=An icy flower from a faraway land. Sterile.
-tile.FlowerPotMod.flowerpot_wintergreenflower.name=Crossbred Wintergreen
-tile.FlowerPotMod.flowerpot_wintergreenflower.desc=A boreal flower from a faraway land. Sterile.
-tile.FlowerPotMod.flowerpot_nightshadeflower.name=Crossbred Nightshade
-tile.FlowerPotMod.flowerpot_nightshadeflower.desc=A creeping vine from a faraway land. Sterile.
+tile.FlowerPotMod.flowerpot_gloryflower.name=Glory
+tile.FlowerPotMod.flowerpot_gloryflower.desc=An icy cyan flower.
+tile.FlowerPotMod.flowerpot_wintergreenflower.name=Wintergreen
+tile.FlowerPotMod.flowerpot_wintergreenflower.desc=A chilly lime flower.
+tile.FlowerPotMod.flowerpot_nightshadeflower.name=Nightshade
+tile.FlowerPotMod.flowerpot_nightshadeflower.desc=A creeping magenta flower.
 
-tile.FlowerPotMod.flowerpot_whitemushroom.name=Crossbred White Mushroom
-tile.FlowerPotMod.flowerpot_whitemushroom.desc=A cryptic mushroom from a faraway land. Poisonous.
+tile.FlowerPotMod.flowerpot_whitemushroom.name=White Mushroom
+tile.FlowerPotMod.flowerpot_whitemushroom.desc=A cryptic white mushroom. Poisonous.
 
 
 
@@ -110,6 +110,16 @@ tile.FlowerPotMod.flowerpot_sugarcanebottom.name=Sugarcane Plantpot
 tile.FlowerPotMod.flowerpot_sugarcanebottom.desc=A sandy display of thick reeds.
 tile.FlowerPotMod.flowerpot_sugarcanetop.name=Sugarcane Plants
 tile.FlowerPotMod.flowerpot_sugarcanetop.desc=A sandy bundle of thick reeds.
+
+tile.FlowerPotMod.flowerpot_fernbottom.name=Fern Plantpot
+tile.FlowerPotMod.flowerpot_fernbottom.desc=A nice display of ferns.
+tile.FlowerPotMod.flowerpot_ferntop.name=Fern Plants
+tile.FlowerPotMod.flowerpot_ferntop.desc=A nice bundle of ferns.
+
+tile.FlowerPotMod.flowerpot_spinifexbottom.name=Spinifex Plantpot
+tile.FlowerPotMod.flowerpot_spinifexbottom.desc=A spiky display of spinifex.
+tile.FlowerPotMod.flowerpot_spinifextop.name=Spinifex Plants
+tile.FlowerPotMod.flowerpot_spinifextop.desc=A spiky bundle of spinifex.
 
 tile.FlowerPotMod.flowerpot_emptybottom.name=Empty Plantpot
 tile.FlowerPotMod.flowerpot_emptybottom.desc=A blank pot filled with nothing but dirt. Fill by shearing an occupied pot.

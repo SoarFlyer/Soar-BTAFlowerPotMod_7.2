@@ -63,6 +63,9 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		Block.getBlock(BlockID + ID_Sugarcane),
 
 		Block.getBlock(BlockID + ID_Empty),
+
+		Block.getBlock(BlockID + ID_Fern),
+		Block.getBlock(BlockID + ID_Spinifex),
 	};
 
 	/////////////////////////////////////////////////////////////////
@@ -499,6 +502,30 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 
 			.create("FlowerPot_Empty", new ItemStack(Plants[2], 1)); // Replace with your output item/block
 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"   ",
+				"ppp",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('p', Block.tallgrassFern) // Example of another input item
+
+			.create("FlowerPot_Fern", new ItemStack(Plants[3], 1)); // Replace with your output item/block
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shaped("MOD_ID")
+			.setShape(
+				"   ",
+				"ppp",
+				"bdb")
+			.addInput('d', Block.dirt) // Replace with your input item/block
+			.addInput('b', Item.brickClay) // Example of another input item
+			.addInput('p', Block.spinifex) // Example of another input item
+
+			.create("FlowerPot_Spinifex", new ItemStack(Plants[4], 1)); // Replace with your output item/block
+
 
 
 
@@ -506,6 +533,7 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+		/* don't need now that they spawn
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shapeless("MOD_ID")
 			.addInput(Block.flowerPurple) // Replace with your input item/block
@@ -527,6 +555,13 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 
 			.create("FlowerPot_NightshadeFlower", new ItemStack(Ground[2], 1)); // Replace with your output item/block
 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		RecipeBuilder.Shapeless("MOD_ID")
+			.addInput(Block.mushroomBrown) // Replace with your input item/block
+			.addInput(Block.mushroomRed) // Example of another input item
+
+			.create("FlowerPot_WhiteMushroom", new ItemStack(Ground[3], 1)); // Replace with your output item/block
+		*/
 
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		RecipeBuilder.Shapeless("MOD_ID")
@@ -543,16 +578,6 @@ public class FlowerPotMod_Recipes extends RecipeRegistry {
 			.addInput(new ItemStack(Ground[2], 1)) // Replace with your input item/block
 
 			.create("FlowerPot_NightshadeMagenta", new ItemStack(Item.dye, 2, 13)); // Replace with your output item/block
-
-
-
-		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		RecipeBuilder.Shapeless("MOD_ID")
-			.addInput(Block.mushroomBrown) // Replace with your input item/block
-			.addInput(Block.mushroomRed) // Example of another input item
-
-			.create("FlowerPot_WhiteMushroom", new ItemStack(Ground[3], 1)); // Replace with your output item/block
-
 	}
 
 
