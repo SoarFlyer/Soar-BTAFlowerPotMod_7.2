@@ -1,7 +1,7 @@
 {
     "required": false,
     "minVersion": "0.8",
-    "package": "soarflyer.flowerpotmod.mixins",
+    "package": "soarflyer.flowerpotmod.mixin",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
     ],

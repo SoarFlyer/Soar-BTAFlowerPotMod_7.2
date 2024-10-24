@@ -72,6 +72,14 @@ repositories {
 		}
 		metadataSources { artifact() }
 	}
+	ivy {
+		url = "https://github.com/UselessSolutions"
+		patternLayout {
+			artifact "[organisation]/releases/download/v[revision]/[module]-[revision].jar"
+			m2compatible = true
+		}
+		metadataSources { artifact() }
+	}
 }
 
 dependencies {
@@ -98,6 +106,9 @@ dependencies {
 	implementation("org.apache.logging.log4j:log4j-1.2-api:${log4jVersion}")
 
 	include(implementation("org.apache.commons:commons-lang3:3.12.0"))
+
+	modImplementation "TerrainAPI:terrainapi:${project.terrain_api_version}"
+	//modImplementation "com.github.UselessSolutions:dragonfly:${project.dragonfly_version}"
 }
 
 java {

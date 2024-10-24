@@ -30,9 +30,9 @@ public class BlockInitializer {
 			.setBlockSound(BlockSounds.STONE)
 			.setHardness(0.5F)
 			.setResistance(0.5F)
-			.setTopTexture("flowerpotmod:block/Top_SimpleFlowerPot")
-			.setSideTextures("flowerpotmod:block/Side_SimpleFlowerPot")
-			.setBottomTexture("flowerpotmod:block/Bottom_SimpleFlowerPot")
+			//.setTopTexture("flowerpotmod:block/Top_SimpleFlowerPot")
+			//.setSideTextures("flowerpotmod:block/Side_SimpleFlowerPot")
+			//.setBottomTexture("flowerpotmod:block/Bottom_SimpleFlowerPot")
 			.setTags(BlockTags.PREVENT_MOB_SPAWNS, BlockTags.MINEABLE_BY_PICKAXE);
 
 
@@ -845,6 +845,7 @@ public class BlockInitializer {
 			.setBlockSound(BlockSounds.GRASS)
 			.setHardness(1.0F)
 			.setResistance(1.0F)
+			.setVisualUpdateOnMetadata()
 			.setNorthTexture("flowerpotmod:block/Arrangement_HeatherFlowerPot")
 			.setEastTexture("flowerpotmod:block/Arrangement_HeatherFlowerPot")
 			.setSouthTexture("flowerpotmod:block/ArrangementF_HeatherFlowerPot")

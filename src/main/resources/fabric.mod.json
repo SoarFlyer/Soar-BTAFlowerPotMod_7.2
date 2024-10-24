@@ -29,6 +29,9 @@
 		],
 		"recipesReady": [
 			"soarflyer.flowerpotmod.FlowerPotMod"
+		],
+		"terrain-api": [
+			"soarflyer.flowerpotmod.librarycontainer.terrainapi.TerrainApiPlugin"
 		]
 	},
   "mixins": [
