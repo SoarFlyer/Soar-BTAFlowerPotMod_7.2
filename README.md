@@ -7,12 +7,10 @@ The mod adds:
 * 11 Treepots
 * 4 Shroompots
 * 4 Plantpots
-* 3 Flowers\*
-* 1 Mushroom\*
+* 3 Flowers
+* 1 Mushroom
 
 Three growpots allow you to grow cherries, cocoa beans, and mushrooms in any season.
-
-\*Don't spawn, must be crafted.
 
 # **TIPS**
 * **Cherry, Cocoa, and Shroom pots need to be bonemealed** in order to grow produce.
