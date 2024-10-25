@@ -1,6 +1,5 @@
 package soarflyer.flowerpotmod.blocks.models;
 
-import net.minecraft.client.render.RenderBlocks;
 import net.minecraft.client.render.block.model.BlockModelStandard;
 import net.minecraft.client.render.tessellator.Tessellator;
 import net.minecraft.core.block.Block;
@@ -19,7 +18,7 @@ public class Model_TopFlowerPot<T extends Block> extends BlockModelStandard<T> {
 		this.block.setBlockBoundsBasedOnState(renderBlocks.blockAccess, x, y, z);
 
 
-		RenderBlocks.enableDirectionalLight = false;
+		//RenderBlocks.enableDirectionalLight = false;
 
 		// I could not get texture flipping to work without an actual flipped .png file for some reason
 		// spent too much on this problem I give up who caaares
