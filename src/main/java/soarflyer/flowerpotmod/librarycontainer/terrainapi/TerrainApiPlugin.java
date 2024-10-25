@@ -45,7 +45,7 @@ public class TerrainApiPlugin implements TerrainAPI {
 				Biomes.OVERWORLD_RAINFOREST});
 
 		ChunkDecoratorOverworldAPI.randomFeatures.addFeature(new WorldFeatureFlowers(BlockID - ID_WhiteMushroom),
-			50, -1f);
+			40, -1f);
 	}
 
 }
