@@ -25,6 +25,7 @@ Three growpots allow you to grow cherries, cocoa beans, and mushrooms in any sea
 *To avoid confusion, you cannot replant flowering and fruiting tops, only base ones that haven't been bonemealed.*
 
 * **The new flowers** now spawn in the world. Wintergreen spawns in boreal forest and meadow, Glory spawns in tundra and taiga, and Nightshade spawns in rainforest and swamp. White Mushrooms spawn rarely under trees.
+
 *Spawning requires TerrainAPI. Use the NoTerrainAPI .jar if you want them to be craftable.*
 
 
