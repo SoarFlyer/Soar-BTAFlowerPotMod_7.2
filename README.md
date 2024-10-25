@@ -6,7 +6,7 @@ The mod adds:
 * 14 Flowerpots
 * 11 Treepots
 * 4 Shroompots
-* 2 Plantpots
+* 4 Plantpots
 * 3 Flowers\*
 * 1 Mushroom\*
 
@@ -26,9 +26,8 @@ Three growpots allow you to grow cherries, cocoa beans, and mushrooms in any sea
 
 *To avoid confusion, you cannot replant flowering and fruiting tops, only base ones that haven't been bonemealed.*
 
-* **To obtain the new flowers and shroom**, you must 'cross breed' them in a workbench. Press U on dandelions and mushrooms to see their recipes.
-
-*They do not spawn in the world in this version.*
+* **The new flowers** now spawn in the world. Wintergreen spawns in boreal forest and meadow, Glory spawns in tundra and taiga, and Nightshade spawns in rainforest and swamp. White Mushrooms spawn rarely under trees.
+*Spawning requires TerrainAPI. Use the NoTerrainAPI .jar if you want them to be craftable.*
 
 
 Block IDs span 14116 - 14227.
